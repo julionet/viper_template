@@ -4,9 +4,6 @@ using VIPER.Infrastructure;
 using VIPER.Repository.Interface;
 using Chronus.Library;
 using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.Linq.Dynamic;
 
@@ -41,6 +38,7 @@ namespace VIPER.Repository
             string mensagem = this.ValidarDados(entity);
             if (mensagem == "")
             {
+                entity.Senha = Security.GetMD5(entity.Senha);
                 mensagem = _repository.Insert(entity);
 
                 if (mensagem == "")
@@ -157,6 +155,8 @@ namespace VIPER.Repository
                 return "Login não informado!";
             else if (SelecionarTodos().Where(p => p.Login == entity.Login && p.Id != entity.Id).Count() != 0)
                 return "Login já informado para outro usuário!";
+            else if (string.IsNullOrWhiteSpace(entity.Nome))
+                return "Nome não informado!";
             else if (string.IsNullOrWhiteSpace(entity.Senha))
                 return "Senha não informada!";
             return "";
@@ -183,7 +183,7 @@ namespace VIPER.Repository
                 return "Usuário não cadastrado!";
             else if (u.Bloqueado)
                 return "Usuário bloqueado!";
-            else if (Security.GetMD5(u.Senha) != senha.ToUpper())
+            else if (u.Senha != Security.GetMD5(senha).ToUpper())
                 return "Senha incorreta!";
             else
                 return "";

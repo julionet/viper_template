@@ -42,11 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutenticacaoDTO.cs" />
+	<Compile Include="ConfiguracaoBancoDTO.cs" />
+	<Compile Include="FastReportDTO.cs" />
     <Compile Include="FuncaoDTO.cs" />
     <Compile Include="LoginDTO.cs" />
     <Compile Include="PerfilFuncaoDTO.cs" />
     <Compile Include="PerfilPerfilFuncaoDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+	<Compile Include="RelatorioDTO.cs" />
     <Compile Include="RelatorioRetornoDTO.cs" />
     <Compile Include="SistemaModuloFuncaoDTO.cs" />
     <Compile Include="UsuarioDataDTO.cs" />

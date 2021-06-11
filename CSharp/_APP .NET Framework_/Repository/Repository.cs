@@ -1,4 +1,4 @@
-using Chronus.App.Repository.Interface;
+using VIPER.Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Linq.Dynamic;
 using System.Linq.Expressions;
 
-namespace Chronus.App.Repository
+namespace VIPER.Repository
 {
     public class Repository<T> : IRepository<T> where T : class
     {

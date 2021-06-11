@@ -1,4 +1,4 @@
-﻿using VIPER.Entity;
+using VIPER.Entity;
 using VIPER.Infrastructure;
 using VIPER.Repository.Interface;
 using System;
@@ -112,9 +112,9 @@ namespace VIPER.Repository
                 return "Tipo não informado!";
             else if (string.IsNullOrWhiteSpace(entity.Interface))
                 return "Interface não informada!";
-            else if (entity.Linha == 0)
+            else if (entity.Tipo == "M" && entity.Linha == 0)
                 return "Número de linhas não informado!";
-            else if (entity.Tamanho == 0)
+            else if (entity.Tipo == "M" && entity.Tamanho == 0)
                 return "Tamanho não informado!";
             else if (entity.QuantidadeModulo == 0)
                 return "Nenhum módulo associado ao sistema!";

@@ -60,7 +60,8 @@ namespace VIPER.Infrastructure
             File.WriteAllLines(_arquivolog, log.ToArray());
         }
 
-        public DbSet<Autenticacao> Autenticacaos { get; set; }
+        public DbSet<Atualizacao> Atualizacaos { get; set; }
+		public DbSet<Autenticacao> Autenticacaos { get; set; }
 		public DbSet<Bloqueio> Bloqueios { get; set; }
         public DbSet<Dashboard> Dashboards { get; set; }
         public DbSet<Dominio> Dominios { get; set; }

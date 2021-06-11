@@ -32,7 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+	<Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+	<Reference Include="System.Drawing" />
+	<Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+	<Compile Include="AppConfig.cs" />
+    <Compile Include="Certificado.cs" />
+    <Compile Include="Classe.cs" />
+    <Compile Include="ConnectionString.cs" />
+	<Compile Include="Conversion.cs" />
+	<Compile Include="Funcoes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security.cs" />
   </ItemGroup>

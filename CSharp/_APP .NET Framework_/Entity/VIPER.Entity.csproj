@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+	<Compile Include="Atualizacao.cs" />
     <Compile Include="Autenticacao.cs" />
     <Compile Include="BaseClass.cs" />
     <Compile Include="Bloqueio.cs" />

@@ -15,8 +15,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Linq.Dynamic", "Syst
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPER.Infrastructure", "VIPER.Infrastructure\VIPER.Infrastructure.csproj", "{D6DEC0B6-4FE9-4EA2-ABA8-63A656D52A03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPER.Service", "VIPER.Service\VIPER.Service.csproj", "{1EEE67A7-6CDC-4BFC-9002-566FE928488C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPER.WFA", "VIPER.WFA\VIPER.WFA.csproj", "{BBD85319-C8C5-4A4D-9AD2-5DF093A8941B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPER.Gerenciador", "VIPER.Gerenciador\VIPER.Gerenciador.csproj", "{C639AA06-7638-4E2F-A916-1AA7EE8CC720}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VIPER.Sistema", "VIPER.Sistema\VIPER.Sistema.csproj", "{41A52118-F1D0-495B-BD09-6CBAB005A336}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronus.Library", "Chronus.Library\Chronus.Library.csproj", "{CB96B208-D2BB-40BB-8369-9C226B707013}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronus.DXperience", "Chronus.DXperience\Chronus.DXperience.csproj", "{983964AF-7C2B-4E4E-AFC1-37F149F90BDF}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

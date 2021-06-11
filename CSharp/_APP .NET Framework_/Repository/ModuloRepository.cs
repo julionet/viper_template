@@ -137,8 +137,6 @@ namespace VIPER.Repository
                 return "Descrição não informada!";
             else if (string.IsNullOrWhiteSpace(entity.Codigo))
                 return "Código não informado!";
-            else if (entity.Cor == 0)
-                return "Cor não informada!";
             else if (entity.QuantidadeFuncao == 0)
                 return "Nenhuma função associada ao módulo!";
             else
