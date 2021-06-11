@@ -30,5 +30,10 @@ namespace VIPER.Service.Webapi_References
         {
             return WebapiSerializer.HttpGet<List<FuncaoDTO>>(_uri, "selecionartodoscompleto");
         }
+		
+		public List<Funcao> SelecionarRelatorioPorSistema(int sistema)
+        {
+            return WebapiSerializer.HttpGet<List<Funcao>>(_uri, $"selecionarrelatorioporsistema/{sistema}");
+        }
     }
 }

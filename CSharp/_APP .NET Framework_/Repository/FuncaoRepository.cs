@@ -140,5 +140,10 @@ namespace VIPER.Repository
             else
                 return "";
         }
+		
+		public IQueryable<Funcao> SelecionarRelatorioPorSistema(int sistema)
+        {
+            return this.SelecionarTodos().Where(p => p.RelatorioId != null && p.Modulo.SistemaId == sistema);
+        }
     }
 }

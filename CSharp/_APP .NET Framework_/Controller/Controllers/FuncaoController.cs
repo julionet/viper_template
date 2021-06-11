@@ -60,5 +60,12 @@ namespace Cartsys.Service.Controllers
         {
             return new FuncaoRepository().SelecionarTodosCompleto().ToList();
         }
+		
+		[HttpGet]
+        [Route("selecionarrelatorioporsistema/{sistema}")]
+        public List<Funcao> SelecionarRelatorioPorSistema(int sistema)
+        {
+            return new FuncaoRepository().SelecionarRelatorioPorSistema(sistema).ToList();
+        }
     }
 }

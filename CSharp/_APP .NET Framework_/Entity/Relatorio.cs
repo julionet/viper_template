@@ -37,6 +37,8 @@ namespace VIPER.Entity
         [IgnoreDataMember]
         public virtual ICollection<Funcao> Funcao { get; set; }
         
+		public bool Selecionar { get; set; }
+		
         public Relatorio()
         {
             Funcao = new HashSet<Funcao>();

@@ -25,6 +25,7 @@ namespace VIPER.Infrastructure.Mapping
             Property(c => c.Visualizar).IsRequired();
             Property(c => c.EscalaX).IsRequired();
             Property(c => c.EscalaY).IsRequired();
+			Ignore(c => c.Selecionar);
         }
     }
 }

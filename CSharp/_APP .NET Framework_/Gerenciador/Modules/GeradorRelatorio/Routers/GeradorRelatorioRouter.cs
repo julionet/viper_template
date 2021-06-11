@@ -8,17 +8,17 @@ namespace VIPER.Modules.GeradorRelatorio.Routers
 {
     public class GeradorRelatorioRouter : IPresenterToRouterGeradorRelatorio
     {
-        public static Form New()
+        public static Form New(int funcao)
         {
-            return new GeradorRelatorioRouter().LoadModule();
+            return new GeradorRelatorioRouter().LoadModule(funcao);
         }
 
-        private Form LoadModule()
+        private Form LoadModule(int funcao)
         {
             GeradorRelatorioPresenter presenter = new GeradorRelatorioPresenter();
             GeradorRelatorioInteractor interactor = new GeradorRelatorioInteractor();
             GeradorRelatorioRouter router = new GeradorRelatorioRouter();
-            GeradorRelatorioView form = new GeradorRelatorioView();
+            GeradorRelatorioView form = new GeradorRelatorioView(funcao);
 			
             form.presenter = presenter;
 
