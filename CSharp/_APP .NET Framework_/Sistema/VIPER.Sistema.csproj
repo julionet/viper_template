@@ -53,6 +53,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MEF\Formulario.cs" />
+    <Compile Include="Modules\ControleAcesso\Interactors\ControleAcessoInteractor.cs" />
+    <Compile Include="Modules\ControleAcesso\Interfaces\ControleAcessoInterfaces.cs" />
+    <Compile Include="Modules\ControleAcesso\Presenters\ControleAcessoPresenter.cs" />
+    <Compile Include="Modules\ControleAcesso\Routers\ControleAcessoRouter.cs" />
+    <Compile Include="Modules\ControleAcesso\Views\ControleAcessoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ControleAcesso\Views\ControleAcessoView.Designer.cs">
+      <DependentUpon>ControleAcessoView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\DesbloqueioRegistro\Interactors\DesbloqueioRegistroInteractor.cs" />
     <Compile Include="Modules\DesbloqueioRegistro\Interfaces\DesbloqueioRegistroInterfaces.cs" />
     <Compile Include="Modules\DesbloqueioRegistro\Presenters\DesbloqueioRegistroPresenter.cs" />
@@ -62,6 +72,26 @@
     </Compile>
     <Compile Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.Designer.cs">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ParametroUsuario\Interactors\ParametroUsuarioInteractor.cs" />
+    <Compile Include="Modules\ParametroUsuario\Interfaces\ParametroUsuarioInterfaces.cs" />
+    <Compile Include="Modules\ParametroUsuario\Presenters\ParametroUsuarioPresenter.cs" />
+    <Compile Include="Modules\ParametroUsuario\Routers\ParametroUsuarioRouter.cs" />
+    <Compile Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.Designer.cs">
+      <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Perfil\Interactors\PerfilInteractor.cs" />
+    <Compile Include="Modules\Perfil\Interfaces\PerfilInterfaces.cs" />
+    <Compile Include="Modules\Perfil\Presenters\PerfilPresenter.cs" />
+    <Compile Include="Modules\Perfil\Routers\PerfilRouter.cs" />
+    <Compile Include="Modules\Perfil\Views\PerfilView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Perfil\Views\PerfilView.Designer.cs">
+      <DependentUpon>PerfilView.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Usuario\Interactors\UsuarioInteractor.cs" />
     <Compile Include="Modules\Usuario\Interfaces\UsuarioInterfaces.cs" />
@@ -95,8 +125,17 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Modules\ControleAcesso\Views\ControleAcessoView.resx">
+      <DependentUpon>ControleAcessoView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.resx">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.resx">
+      <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Perfil\Views\PerfilView.resx">
+      <DependentUpon>PerfilView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Usuario\Views\UsuarioView.resx">
       <DependentUpon>UsuarioView.cs</DependentUpon>
