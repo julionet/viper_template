@@ -1,0 +1,40 @@
+{
+  __MODULENAME__Presenter.pas
+  __APPNAME__
+
+  Created by __USERNAME__ on __DATETIME__.
+  Copyright © __YEAR__ __ORGANIZATIONNAME__. All rights reserved.
+}
+
+unit VIPERPresenter;
+
+interface
+
+uses
+  Data.DB, VIPERInterfaces;
+
+type
+  TVIPERPresenter = class(TInterfacedObject, IViewToPresenterVIPER, IInteractorToPresenterVIPER)
+    View: IPresenterToViewVIPER;
+    Interactor: IPresenterToInteractorVIPER;
+    Router: IPresenterToRouterVIPER;
+
+    class function NewView: IViewToPresenterVIPER;
+    class function NewInteractor: IInteractorToPresenterVIPER;
+  end;
+
+implementation
+
+{ TVIPERPresenter }
+
+class function TVIPERPresenter.NewInteractor: IInteractorToPresenterVIPER;
+begin
+  Result := TVIPERPresenter.Create;
+end;
+
+class function TVIPERPresenter.NewView: IViewToPresenterVIPER;
+begin
+  Result := TVIPERPresenter.Create;
+end;
+
+end.

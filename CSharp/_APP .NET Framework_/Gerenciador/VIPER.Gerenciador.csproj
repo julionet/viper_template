@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C639AA06-7638-4E2F-A916-1AA7EE8CC720}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VIPER.Gerenciador</RootNamespace>
+    <AssemblyName>VIPER.Gerenciador</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FastReport, Version=2014.2.2.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\FastReports\FastReport.Net\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2014.2.2.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\FastReports\FastReport.Net\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2014.2.2.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\FastReports\FastReport.Net\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MEF\Formulario.cs" />
+    <Compile Include="Modules\Configuracao\Interactors\ConfiguracaoInteractor.cs" />
+    <Compile Include="Modules\Configuracao\Interfaces\ConfiguracaoInterfaces.cs" />
+    <Compile Include="Modules\Configuracao\Presenters\ConfiguracaoPresenter.cs" />
+    <Compile Include="Modules\Configuracao\Routers\ConfiguracaoRouter.cs" />
+    <Compile Include="Modules\Configuracao\Views\ConfiguracaoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Configuracao\Views\ConfiguracaoView.Designer.cs">
+      <DependentUpon>ConfiguracaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Funcao\Interactors\FuncaoInteractor.cs" />
+    <Compile Include="Modules\Funcao\Interfaces\FuncaoInterfaces.cs" />
+    <Compile Include="Modules\Funcao\Presenters\FuncaoPresenter.cs" />
+    <Compile Include="Modules\Funcao\Routers\FuncaoRouter.cs" />
+    <Compile Include="Modules\Funcao\Views\FuncaoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Funcao\Views\FuncaoView.designer.cs">
+      <DependentUpon>FuncaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeradorRelatorioManutencao\Interactors\GeradorRelatorioManutencaoInteractor.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\Interfaces\GeradorRelatorioManutencaoInterfaces.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\Presenters\GeradorRelatorioManutencaoPresenter.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\Routers\GeradorRelatorioManutencaoRouter.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.designer.cs">
+      <DependentUpon>GeradorRelatorioManutencaoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\GeradorRelatorio\Interactors\GeradorRelatorioInteractor.cs" />
+    <Compile Include="Modules\GeradorRelatorio\Interfaces\GeradorRelatorioInterfaces.cs" />
+    <Compile Include="Modules\GeradorRelatorio\Presenters\GeradorRelatorioPresenter.cs" />
+    <Compile Include="Modules\GeradorRelatorio\Routers\GeradorRelatorioRouter.cs" />
+    <Compile Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.Designer.cs">
+      <DependentUpon>GeradorRelatorioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImportaRelatorio\Interactors\ImportaRelatorioInteractor.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Interfaces\ImportaRelatorioInterfaces.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Presenters\ImportaRelatorioPresenter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Routers\ImportaRelatorioRouter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.designer.cs">
+      <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Modulo\Interactors\ModuloInteractor.cs" />
+    <Compile Include="Modules\Modulo\Interfaces\ModuloInterfaces.cs" />
+    <Compile Include="Modules\Modulo\Presenters\ModuloPresenter.cs" />
+    <Compile Include="Modules\Modulo\Routers\ModuloRouter.cs" />
+    <Compile Include="Modules\Modulo\Views\ModuloView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Modulo\Views\ModuloView.designer.cs">
+      <DependentUpon>ModuloView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Parametro\Interactors\ParametroInteractor.cs" />
+    <Compile Include="Modules\Parametro\Interfaces\ParametroInterfaces.cs" />
+    <Compile Include="Modules\Parametro\Presenters\ParametroPresenter.cs" />
+    <Compile Include="Modules\Parametro\Routers\ParametroRouter.cs" />
+    <Compile Include="Modules\Parametro\Views\ParametroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Parametro\Views\ParametroView.designer.cs">
+      <DependentUpon>ParametroView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Sistema\Interactors\SistemaInteractor.cs" />
+    <Compile Include="Modules\Sistema\Interfaces\SistemaInterfaces.cs" />
+    <Compile Include="Modules\Sistema\Presenters\SistemaPresenter.cs" />
+    <Compile Include="Modules\Sistema\Routers\SistemaRouter.cs" />
+    <Compile Include="Modules\Sistema\Views\SistemaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Sistema\Views\SistemaView.Designer.cs">
+      <DependentUpon>SistemaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsDefault.cs" />
+    <EmbeddedResource Include="Modules\Configuracao\Views\ConfiguracaoView.resx">
+      <DependentUpon>ConfiguracaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Funcao\Views\FuncaoView.resx">
+      <DependentUpon>FuncaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.resx">
+      <DependentUpon>GeradorRelatorioManutencaoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.resx">
+      <DependentUpon>GeradorRelatorioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.resx">
+      <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Modulo\Views\ModuloView.resx">
+      <DependentUpon>ModuloView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Parametro\Views\ParametroView.resx">
+      <DependentUpon>ParametroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Sistema\Views\SistemaView.resx">
+      <DependentUpon>SistemaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\VIPER.DTO\VIPER.DTO.csproj">
+      <Project>{ae6a2589-6ea5-4511-97fe-c9cd2aab3ae9}</Project>
+      <Name>VIPER.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VIPER.Entity\VIPER.Entity.csproj">
+      <Project>{e55bb26e-f902-4537-9379-336af94dae01}</Project>
+      <Name>VIPER.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VIPER.Service\VIPER.Service.csproj">
+      <Project>{1EEE67A7-6CDC-4BFC-9002-566FE928488C}</Project>
+      <Name>VIPER.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chronus.DXperience\Chronus.DXperience.csproj">
+      <Project>{983964af-7c2b-4e4e-afc1-37f149f90bdf}</Project>
+      <Name>Chronus.DXperience</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chronus.Library\Chronus.Library.csproj">
+      <Project>{CB96B208-D2BB-40BB-8369-9C226B707013}</Project>
+      <Name>Chronus.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

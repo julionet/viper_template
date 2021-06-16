@@ -1,0 +1,31 @@
+{
+  __MODULENAME__Interactor.pas
+  __APPNAME__
+
+  Created by __USERNAME__ on __DATETIME__.
+  Copyright © __YEAR__ __ORGANIZATIONNAME__. All rights reserved.
+}
+
+unit VIPERInteractor;
+
+interface
+
+uses
+  Data.DB, VIPERInterfaces;
+
+type
+  TVIPERInteractor = class(TInterfacedObject, IPresenterToInteractorVIPER)
+    Presenter: IInteractorToPresenterVIPER;
+    class function New: IPresenterToInteractorVIPER;
+  end;
+
+implementation
+
+{ TVIPERInteractor }
+
+class function TVIPERInteractor.New: IPresenterToInteractorVIPER;
+begin
+  Result := TVIPERInteractor.Create;
+end;
+
+end.

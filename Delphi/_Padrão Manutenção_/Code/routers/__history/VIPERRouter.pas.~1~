@@ -1,0 +1,49 @@
+{
+  __MODULENAME__Router.pas
+  __APPNAME__
+
+  Created by __USERNAME__ on __DATETIME__.
+  Copyright © __YEAR__ __ORGANIZATIONNAME__. All rights reserved.
+}
+
+unit VIPERRouter;
+
+interface
+
+uses
+  VIPERInterfaces, VIPERView, Forms;
+
+type
+  TVIPERRouter = class(TInterfacedObject, IPresenterToRouterVIPER)
+    class function New: IPresenterToRouterVIPER;
+    function LoadModule: TForm;
+  end;
+
+implementation
+
+{ TVIPERRouter }
+
+uses VIPERPresenter, VIPERInteractor;
+
+function TVIPERRouter.LoadModule: TForm;
+begin
+  var View := TFrmVIPERView.Create(nil);
+  var Presenter := TVIPERPresenter.Create;
+  var Interactor := TVIPERInteractor.Create;
+  var Router := TVIPERRouter.Create;
+
+  View.Presenter := Presenter;
+  Presenter.View := View;
+  Presenter.Router := Router;
+  Presenter.Interactor := Interactor;
+  Interactor.Presenter := Presenter;
+
+  Result := FrmVIPERView;
+end;
+
+class function TVIPERRouter.New: IPresenterToRouterVIPER;
+begin
+  Result := TVIPERRouter.Create;
+end;
+
+end.

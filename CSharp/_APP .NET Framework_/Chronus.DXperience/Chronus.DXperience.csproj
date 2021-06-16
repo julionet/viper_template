@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{983964AF-7C2B-4E4E-AFC1-37F149F90BDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chronus.DXperience</RootNamespace>
+    <AssemblyName>Chronus.DXperience</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonsPanel.cs" />
+    <Compile Include="ComponenteDX.cs" />
+    <Compile Include="ComponenteHelper.cs" />
+    <Compile Include="ComponenteParametro.cs" />
+    <Compile Include="ComponenteRelatorio.cs" />
+    <Compile Include="ControlMoveOrResizer.cs" />
+    <Compile Include="ConversionDX.cs" />
+    <Compile Include="CustomLookUpEdit.cs" />
+    <Compile Include="ExtensionDX.cs" />
+    <Compile Include="GridViewWithButtons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IFormulario.cs" />
+    <Compile Include="Interface.cs" />
+    <Compile Include="MascaraDX.cs" />
+    <Compile Include="MessageError.cs" />
+    <Compile Include="Pesquisa.cs" />
+    <Compile Include="PopupContainerRegistroPesquisa.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPesquisa.cs" />
+    <Compile Include="RichEditControlUtils.cs" />
+    <Compile Include="SettingsDefault.cs" />
+    <Compile Include="TileControlDX.cs" />
+    <Compile Include="UsersControls\ucPesquisaNovo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\ucPesquisaNovo.designer.cs">
+      <DependentUpon>ucPesquisaNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControls\ucPesquisa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\ucPesquisa.designer.cs">
+      <DependentUpon>ucPesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerticalGridHelper.cs" />
+    <Compile Include="WindowsForms\FrmManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsForms\FrmManutencao.designer.cs">
+      <DependentUpon>FrmManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsForms\FrmModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsForms\FrmModelo.designer.cs">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsForms\FrmParametroRelatorioDX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsForms\FrmParametroRelatorioDX.designer.cs">
+      <DependentUpon>FrmParametroRelatorioDX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsForms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsForms\SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsForms\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsForms\WaitForm.designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\ucPesquisaNovo.resx">
+      <DependentUpon>ucPesquisaNovo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\ucPesquisa.resx">
+      <DependentUpon>ucPesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsForms\FrmManutencao.resx">
+      <DependentUpon>FrmManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsForms\FrmModelo.resx">
+      <DependentUpon>FrmModelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsForms\FrmParametroRelatorioDX.resx">
+      <DependentUpon>FrmParametroRelatorioDX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsForms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsForms\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Chronus.Library\Chronus.Library.csproj">
+      <Project>{cb96b208-d2bb-40bb-8369-9c226b707013}</Project>
+      <Name>Chronus.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Linq.Dynamic\System.Linq.Dynamic.csproj">
+      <Project>{17c0d5de-c72d-4a06-a12c-445ebcf3b9ea}</Project>
+      <Name>System.Linq.Dynamic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checkedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-checklist_db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combobox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-combobox_db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dateedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-evento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-groupbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-groupbox_radiobutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-groupbox_radiobutton_db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-radiobutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-spinedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-textedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-timeedit.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

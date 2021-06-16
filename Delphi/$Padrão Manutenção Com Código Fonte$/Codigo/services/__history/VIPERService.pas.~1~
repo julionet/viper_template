@@ -1,0 +1,37 @@
+unit TorrentService;
+
+interface
+
+uses
+  Data.DB;
+
+type
+  TTorrentService = class
+  private
+  public
+    class function Filtrar(Condicao: String; DataSet: TDataSet): TDataSet;
+    class function Gravar(DataSet: TDataSet): String;
+    class function Excluir(DataSet: TDataSet): String;
+  end;
+
+implementation
+
+{ TTipoService }
+
+class function TTorrentService.Excluir(DataSet: TDataSet): String;
+begin
+  Result := '';
+end;
+
+class function TTorrentService.Filtrar(Condicao: String;
+  DataSet: TDataSet): TDataSet;
+begin
+  Result := DataSet;
+end;
+
+class function TTipoService.Gravar(DataSet: TDataSet): String;
+begin
+  Result := '';
+end;
+
+end.

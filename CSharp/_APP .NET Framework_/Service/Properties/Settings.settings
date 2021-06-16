@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="VIPER.Service.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServidorAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:55980/api/</Value>
+    </Setting>
+    <Setting Name="UsuarioAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c8b76359-e3e7-4c08-af66-07428a9204a6</Value>
+    </Setting>
+    <Setting Name="SenhaAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1cb474993d9cd2161264579335325ba0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
