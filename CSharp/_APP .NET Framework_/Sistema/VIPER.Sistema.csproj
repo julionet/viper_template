@@ -93,6 +93,16 @@
     <Compile Include="Modules\Perfil\Views\PerfilView.Designer.cs">
       <DependentUpon>PerfilView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\PermissaoAcesso\Interactors\PermissaoAcessoInteractor.cs" />
+    <Compile Include="Modules\PermissaoAcesso\Interfaces\PermissaoAcessoInterfaces.cs" />
+    <Compile Include="Modules\PermissaoAcesso\Presenters\PermissaoAcessoPresenter.cs" />
+    <Compile Include="Modules\PermissaoAcesso\Routers\PermissaoAcessoRouter.cs" />
+    <Compile Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.designer.cs">
+      <DependentUpon>PermissaoAcessoView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Usuario\Interactors\UsuarioInteractor.cs" />
     <Compile Include="Modules\Usuario\Interfaces\UsuarioInterfaces.cs" />
     <Compile Include="Modules\Usuario\Presenters\UsuarioPresenter.cs" />
@@ -122,6 +132,10 @@
       <Project>{983964af-7c2b-4e4e-afc1-37f149f90bdf}</Project>
       <Name>Chronus.DXperience</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chronus.Library\Chronus.Library.csproj">
+      <Project>{CB96B208-D2BB-40BB-8369-9C226B707013}</Project>
+      <Name>Chronus.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -136,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Perfil\Views\PerfilView.resx">
       <DependentUpon>PerfilView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.resx">
+      <DependentUpon>PermissaoAcessoView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Usuario\Views\UsuarioView.resx">
       <DependentUpon>UsuarioView.cs</DependentUpon>

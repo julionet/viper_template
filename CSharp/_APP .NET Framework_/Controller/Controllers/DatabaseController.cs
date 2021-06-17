@@ -4,7 +4,9 @@ using VIPER.Infrastructure;
 using VIPER.Repository;
 using Chronus.Library;
 using System;
+using System.Collections.Generic;
 using System.Configuration;
+using System.Linq;
 using System.Web.Hosting;
 using System.Web.Http;
 
@@ -93,6 +95,13 @@ namespace VIPER.Controller.Controllers
         public string ObterNumeroSerieHD()
         {
             return new DatabaseRepository().GetSerialNumberHD();
+        }
+		
+		[HttpPost]
+        [Route("executarsql")]
+        public List<LookupDataSourceDTO> ExecutarSQL([FromBody] string sql)
+        {
+            return new DatabaseRepository().ExecutarSQL<LookupDataSourceDTO>(sql).ToList();
         }
     }
 }

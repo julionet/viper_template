@@ -1,5 +1,6 @@
 ﻿using VIPER.DTO;
 using System;
+using System.Collections.Generic;
 
 namespace VIPER.Service.Webapi_References
 {
@@ -45,6 +46,11 @@ namespace VIPER.Service.Webapi_References
         public int ObterDatabase()
         {
             return WebapiSerializer.HttpGet<int>(_uri, "obterdatabase");
+        }
+		
+		public List<LookupDataSourceDTO> ExecutarSQL(string sql)
+        {
+            return WebapiSerializer.HttpPost<string, List<LookupDataSourceDTO>>(sql, _uri, "executarsql");
         }
     }
 }

@@ -1,10 +1,10 @@
-﻿using Chronus.App.Modules.ParametroUsuario.Interactors;
-using Chronus.App.Modules.ParametroUsuario.Interfaces;
-using Chronus.App.Modules.ParametroUsuario.Presenters;
-using Chronus.App.Modules.ParametroUsuario.Views;
+using VIPER.Modules.ParametroUsuario.Interactors;
+using VIPER.Modules.ParametroUsuario.Interfaces;
+using VIPER.Modules.ParametroUsuario.Presenters;
+using VIPER.Modules.ParametroUsuario.Views;
 using System.Windows.Forms;
 
-namespace Chronus.App.Modules.ParametroUsuario.Routers
+namespace VIPER.Modules.ParametroUsuario.Routers
 {
     public class ParametroUsuarioRouter : IPresenterToRouterParametroUsuario
     {

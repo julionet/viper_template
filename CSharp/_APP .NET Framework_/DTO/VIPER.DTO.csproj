@@ -47,6 +47,7 @@
     <Compile Include="FastReportDTO.cs" />
     <Compile Include="FuncaoDTO.cs" />
     <Compile Include="LoginDTO.cs" />
+	<Compile Include="LookupDataSourceDTO.cs" />
     <Compile Include="PerfilFuncaoDTO.cs" />
     <Compile Include="PerfilPerfilFuncaoDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,4 +1,4 @@
-﻿using VIPER.DTO;
+using VIPER.DTO;
 using VIPER.Modules.Sistema.Interfaces;
 using Chronus.DXperience;
 using Chronus.Library;
@@ -14,6 +14,7 @@ namespace VIPER.Modules.Sistema.Views
     {
         public IViewToPresenterSistema presenter;
 
+        private SplashScreen _splash;
         private Dictionary<int, BindingSource> dicFuncao;
         private int _modulo = 999999;
 
@@ -76,16 +77,21 @@ namespace VIPER.Modules.Sistema.Views
         {
             principalBindingSource.Clear();
             if (!string.IsNullOrWhiteSpace(sCondicao))
+            {
+                _splash = new SplashScreen("Buscando informações...");
                 presenter.ObterDadosPrincipal(sCondicao);
+            }
         }
 
         protected override void GravarRegistro()
         {
+            _splash = new SplashScreen("Gravando registro...");
             presenter.Gravar(JoinBindingSources());
         }
 
         protected override void ExcluirRegistro()
         {
+            _splash = new SplashScreen("Excluindo registro...");
             presenter.Excluir(principalBindingSource.Current as Entity.Sistema);
         }
 
@@ -164,32 +170,37 @@ namespace VIPER.Modules.Sistema.Views
 
         public void GravarSucesso()
         {
+            _splash.FinalizarSplashScreen();
             ExecutarAposGravar();
         }
 
         public void GravarFalha(string mensagem)
         {
+            _splash.FinalizarSplashScreen();
             XtraMessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public void ExcluirSucesso()
         {
+            _splash.FinalizarSplashScreen();
             ExecutarAposExcluir();
         }
 
         public void ExcluirFalha(string mensagem)
         {
+            _splash.FinalizarSplashScreen();
             XtraMessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public void ObterDadosPrincipalSucesso(List<Entity.Sistema> dados)
         {
+            _splash.FinalizarSplashScreen();
             principalBindingSource.DataSource = dados;
         }
 
         public void ObterDadosPrincipalFalha()
         {
-            
+            _splash.FinalizarSplashScreen();
         }
 
         public void ObterModulosSucesso(List<Entity.Modulo> dados)

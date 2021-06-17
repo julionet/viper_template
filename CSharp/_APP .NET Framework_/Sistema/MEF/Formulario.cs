@@ -19,6 +19,7 @@ namespace VIPER.Sistema.MEF
             {
 				case "DesbloqueioRegistroView": return (XtraForm)Modules.DesbloqueioRegistro.Routers.DesbloqueioRegistroRouter.New(funcao);
 				case "UsuarioView": return (XtraForm)Modules.Usuario.Routers.UsuarioRouter.New(funcao);
+				case "PerfilView": return (XtraForm)Modules.Perfil.Routers.PerfilRouter.New(funcao);
                 default:
                     return null;
             }

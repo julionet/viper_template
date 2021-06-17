@@ -280,9 +280,7 @@ namespace Chronus.DXperience
                 }
                 else
                 {
-                    var splash = new SplashScreen("Obtendo informações...");
                     ObterDadosPrincipal();
-                    splash.FinalizarSplashScreen();
 
                     if (principalBindingSource.Count != 0)
                     {
@@ -362,9 +360,7 @@ namespace Chronus.DXperience
             {
                 ExecutarAntesGravar();
                 GravarCheckListBox();
-                var splash = new SplashScreen("Gravando registro...");
                 GravarRegistro();
-                splash.FinalizarSplashScreen();
             }
         }
 
@@ -378,9 +374,7 @@ namespace Chronus.DXperience
             if (XtraMessageBox.Show("Deseja realmente excluir o registro selecionado?", "Confirmação", MessageBoxButtons.YesNo,
                                 MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
-                var splash = new SplashScreen("Excluindo registro...");
                 ExcluirRegistro();
-                splash.FinalizarSplashScreen();
             }
         }
 

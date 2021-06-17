@@ -51,6 +51,9 @@ namespace VIPER.Infrastructure
                 context.Funcaos.Add(new Funcao() { Codigo = "GERADOR_RELATORIO", Descricao = "Gerador de Relatórios", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "GeradorRelatorioView", Manutencao = false, ModuloId = 1 });
 				context.Funcaos.Add(new Funcao() { Codigo = "CONFIGURACOES", Descricao = "Configurações", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "ConfiguracaoView", Manutencao = false, ModuloId = 1 });
 				context.Funcaos.Add(new Funcao() { Codigo = "DESBLOQUEIO", Descricao = "Desbloqueio de Registros", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "DesbloqueioRegistroView", Manutencao = false, ModuloId = 2 });
+				context.Funcaos.Add(new Funcao() { Codigo = "CONTROLE_ACESSO", Descricao = "Controle de Acesso", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ControleAcessoView", Manutencao = false, ModuloId = 2 });
+				context.Funcaos.Add(new Funcao() { Codigo = "PERFIL", Descricao = "Perfil", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "PerfilView", Manutencao = false, ModuloId = 2 });
+				context.Funcaos.Add(new Funcao() { Codigo = "USUARIO", Descricao = "Usuários", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "UsuarioView", Manutencao = false, ModuloId = 2 });
                 context.SaveChanges();
             }
         }

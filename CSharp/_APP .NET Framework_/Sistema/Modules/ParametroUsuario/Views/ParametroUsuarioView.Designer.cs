@@ -1,4 +1,4 @@
-﻿namespace Chronus.App.Modules.ParametroUsuario.Views
+namespace VIPER.Modules.ParametroUsuario.Views
 {
     partial class ParametroUsuarioView
     {

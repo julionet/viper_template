@@ -1,4 +1,4 @@
-﻿namespace Chronus.App.Modules.Perfil.Views
+﻿namespace VIPER.Modules.Perfil.Views
 {
     partial class PerfilView
     {
@@ -98,7 +98,7 @@
             // 
             // principalBindingSource
             // 
-            this.principalBindingSource.DataSource = typeof(Chronus.App.Entity.Perfil);
+            this.principalBindingSource.DataSource = typeof(VIPER.Entity.Perfil);
             // 
             // xtcPaginas
             // 
@@ -212,7 +212,7 @@
             // 
             // perfilfuncaoBindingSource
             // 
-            this.perfilfuncaoBindingSource.DataSource = typeof(Chronus.App.DTO.PerfilFuncaoDTO);
+            this.perfilfuncaoBindingSource.DataSource = typeof(VIPER.DTO.PerfilFuncaoDTO);
             // 
             // gclFuncoes
             // 

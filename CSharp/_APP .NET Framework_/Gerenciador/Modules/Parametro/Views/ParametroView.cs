@@ -13,6 +13,8 @@ namespace VIPER.Modules.Parametro.Views
     {
         public IViewToPresenterParametro presenter;
 
+        private SplashScreen _splash;
+
         public ParametroView(int funcao)
         {
             InitializeComponent();
@@ -49,16 +51,21 @@ namespace VIPER.Modules.Parametro.Views
         {
             principalBindingSource.Clear();
             if (!string.IsNullOrWhiteSpace(sCondicao))
+            {
+                _splash = new SplashScreen("Buscando informações...");
                 presenter.ObterDadosPrincipal(sCondicao);
+            }
         }
 
         protected override void ExcluirRegistro()
         {
+            _splash = new SplashScreen("Excluindo registro...");
             presenter.Excluir(principalBindingSource.Current as Entity.Parametro);
         }
 
         protected override void GravarRegistro()
         {
+            _splash = new SplashScreen("Gravando registro...");
             presenter.Gravar(principalBindingSource.Current as Entity.Parametro);
         }
 
@@ -77,31 +84,36 @@ namespace VIPER.Modules.Parametro.Views
 
         public void ObterDadosPrincipalSucesso(List<Entity.Parametro> dados)
         {
+            _splash.FinalizarSplashScreen();
             principalBindingSource.DataSource = dados;
         }
 
         public void ObterDadosPrincipalFalha()
         {
-            
+            _splash.FinalizarSplashScreen();
         }
 
         public void GravarSucesso()
         {
+            _splash.FinalizarSplashScreen();
             ExecutarAposGravar();
         }
 
         public void GravarFalha(string mensagem)
         {
+            _splash.FinalizarSplashScreen();
             XtraMessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         public void ExcluirSucesso()
         {
+            _splash.FinalizarSplashScreen();
             ExecutarAposExcluir();
         }
 
         public void ExcluirFalha(string mensagem)
         {
+            _splash.FinalizarSplashScreen();
             XtraMessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
