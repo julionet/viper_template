@@ -1,4 +1,4 @@
-﻿namespace Chronus.App.Modules.ControleAcesso.Views
+namespace VIPER.Modules.ControleAcesso.Views
 {
     partial class ControleAcessoView
     {
@@ -84,7 +84,7 @@
             // 
             // detalheBindingSource
             // 
-            this.detalheBindingSource.DataSource = typeof(DTO.UsuarioFuncaoDTO);
+            this.detalheBindingSource.DataSource = typeof(VIPER.DTO.UsuarioFuncaoDTO);
             // 
             // panBottom
             // 

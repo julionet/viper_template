@@ -1,4 +1,4 @@
-﻿namespace Chronus.App2.DTO
+﻿namespace VIPER.DTO
 {
     public class LookupDataSourceDTO
     {

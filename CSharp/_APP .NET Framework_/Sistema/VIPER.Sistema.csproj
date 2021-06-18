@@ -37,6 +37,7 @@
     <Reference Include="DevExpress.Printing.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Sparkline.v20.2.Core, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -73,6 +74,16 @@
     <Compile Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.Designer.cs">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ParametroEdicao\Interactors\ParametroEdicaoInteractor.cs" />
+    <Compile Include="Modules\ParametroEdicao\Interfaces\ParametroEdicaoInterfaces.cs" />
+    <Compile Include="Modules\ParametroEdicao\Presenters\ParametroEdicaoPresenter.cs" />
+    <Compile Include="Modules\ParametroEdicao\Routers\ParametroEdicaoRouter.cs" />
+    <Compile Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.designer.cs">
+      <DependentUpon>ParametroEdicaoView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\ParametroUsuario\Interactors\ParametroUsuarioInteractor.cs" />
     <Compile Include="Modules\ParametroUsuario\Interfaces\ParametroUsuarioInterfaces.cs" />
     <Compile Include="Modules\ParametroUsuario\Presenters\ParametroUsuarioPresenter.cs" />
@@ -82,6 +93,16 @@
     </Compile>
     <Compile Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.Designer.cs">
       <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Parametro\Interactors\ParametroInteractor.cs" />
+    <Compile Include="Modules\Parametro\Interfaces\ParametroInterfaces.cs" />
+    <Compile Include="Modules\Parametro\Presenters\ParametroPresenter.cs" />
+    <Compile Include="Modules\Parametro\Routers\ParametroRouter.cs" />
+    <Compile Include="Modules\Parametro\Views\ParametroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Parametro\Views\ParametroView.designer.cs">
+      <DependentUpon>ParametroView.cs</DependentUpon>
     </Compile>
     <Compile Include="Modules\Perfil\Interactors\PerfilInteractor.cs" />
     <Compile Include="Modules\Perfil\Interfaces\PerfilInterfaces.cs" />
@@ -145,8 +166,14 @@
     <EmbeddedResource Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.resx">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.resx">
+      <DependentUpon>ParametroEdicaoView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.resx">
       <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Parametro\Views\ParametroView.resx">
+      <DependentUpon>ParametroView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\Perfil\Views\PerfilView.resx">
       <DependentUpon>PerfilView.cs</DependentUpon>
