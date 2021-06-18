@@ -37,7 +37,10 @@ namespace VIPER.Modules.ParametroEdicao.Views
         private void FrmAlteraDiretiva_Load(object sender, EventArgs e)
         {
             txtValorPadrao.Text = _valorpadrao;
-            presenter.ExecutarSQL(_lista);
+            if (_tipocomponente == "S" || _tipocomponente == "C")
+                presenter.ExecutarSQL(_lista);
+            else
+                presenter.ExecutarSQL("");
         }
 
         private void btnOk_Click(object sender, EventArgs e)

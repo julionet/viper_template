@@ -182,7 +182,7 @@ namespace VIPER.Modules.ControleAcesso.Views
 
         private void pceUsuario_QueryPopUp(object sender, CancelEventArgs e)
         {
-            string condicaoinicial = "(Master == false && Bloqueado == false)";
+            string condicaoinicial = "(Master == false and Bloqueado == false)";
             ucUsuario = new ucPesquisa(pceUsuario, PopupContainerRegistroPesquisa.RegistroPesquisaLogin(), Servicos.usuarioService, condicaoinicial);
             ucUsuario.Dock = DockStyle.Fill;
 
