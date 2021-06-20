@@ -74,6 +74,16 @@
     <Compile Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.Designer.cs">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ImportaRelatorio\Interactors\ImportaRelatorioInteractor.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Interfaces\ImportaRelatorioInterfaces.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Presenters\ImportaRelatorioPresenter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Routers\ImportaRelatorioRouter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.Designer.cs">
+      <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\ParametroEdicao\Interactors\ParametroEdicaoInteractor.cs" />
     <Compile Include="Modules\ParametroEdicao\Interfaces\ParametroEdicaoInterfaces.cs" />
     <Compile Include="Modules\ParametroEdicao\Presenters\ParametroEdicaoPresenter.cs" />
@@ -165,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.resx">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.resx">
+      <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.resx">
       <DependentUpon>ParametroEdicaoView.cs</DependentUpon>

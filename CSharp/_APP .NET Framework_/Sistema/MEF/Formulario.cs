@@ -22,6 +22,7 @@ namespace VIPER.Sistema.MEF
 				case "PerfilView": return (XtraForm)Modules.Perfil.Routers.PerfilRouter.New(funcao);
 				case "ParametroView": return (XtraForm)Modules.Parametro.Routers.ParametroRouter.New(funcao);
 				case "ControleAcessoView": return (XtraForm)Modules.ControleAcesso.Routers.ControleAcessoRouter.New(funcao);
+				case "ImportaRelatorioView": return (XtraForm)Modules.ImportaRelatorio.Routers.ImportaRelatorioRouter.New(funcao);
                 default:
                     return null;
             }

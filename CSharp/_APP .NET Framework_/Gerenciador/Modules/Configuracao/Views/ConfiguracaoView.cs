@@ -14,7 +14,7 @@ namespace VIPER.Modules.Configuracao.Views
         public IViewToPresenterConfiguracao presenter;
 
         Gerenciador.SettingsDefault settingslocal = new Gerenciador.SettingsDefault();
-        DXperience.SettingsDefault settingslibrary = new DXperience.SettingsDefault();
+        SettingsDefault settingslibrary = new SettingsDefault();
 
         public ConfiguracaoView(int funcao)
         {
