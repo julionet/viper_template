@@ -62,42 +62,42 @@
     <Compile Include="AtualizacaoVersao.cs" />
     <Compile Include="FormularioMEF.cs" />
     <Compile Include="MEF.cs" />
-    <Compile Include="Modules\AlteraSenha\Views\AlteraSenhaView.cs">
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\AlteraSenha\Views\AlteraSenhaView.designer.cs">
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaView.designer.cs">
       <DependentUpon>AlteraSenhaView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\AtualizaVersao\Interactors\AtualizaVersaoInteractor.cs" />
-    <Compile Include="Modules\AtualizaVersao\Interfaces\AtualizaVersaoInterfaces.cs" />
-    <Compile Include="Modules\AtualizaVersao\Presenters\AtualizaVersaoPresenter.cs" />
-    <Compile Include="Modules\AtualizaVersao\Routers\AtualizaVersaoRouter.cs" />
-    <Compile Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.cs">
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoInteractor.cs" />
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoInterfaces.cs" />
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoPresenter.cs" />
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoRouter.cs" />
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.Designer.cs">
+    <Compile Include="Modules\AtualizaVersao\AtualizaVersaoView.Designer.cs">
       <DependentUpon>AtualizaVersaoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Login\Views\LoginView.cs">
+    <Compile Include="Modules\Login\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Login\Views\LoginView.designer.cs">
+    <Compile Include="Modules\Login\LoginView.designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Principal\Views\PrincipalView.cs">
+    <Compile Include="Modules\Principal\PrincipalView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Principal\Views\PrincipalView.designer.cs">
+    <Compile Include="Modules\Principal\PrincipalView.designer.cs">
       <DependentUpon>PrincipalView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\TrocaSistema\Interactors\TrocaSistemaInteractor.cs" />
-    <Compile Include="Modules\TrocaSistema\Interfaces\TrocaSistemaInterfaces.cs" />
-    <Compile Include="Modules\TrocaSistema\Presenters\TrocaSistemaPresenter.cs" />
-    <Compile Include="Modules\TrocaSistema\Routers\TrocaSistemaRouter.cs" />
-    <Compile Include="Modules\TrocaSistema\Views\TrocaSistemaView.cs">
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaInteractor.cs" />
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaInterfaces.cs" />
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaPresenter.cs" />
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaRouter.cs" />
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\TrocaSistema\Views\TrocaSistemaView.designer.cs">
+    <Compile Include="Modules\TrocaSistema\TrocaSistemaView.designer.cs">
       <DependentUpon>TrocaSistemaView.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen\SplashScreenLogin.cs">
@@ -106,28 +106,28 @@
     <Compile Include="SplashScreen\SplashScreenLogin.designer.cs">
       <DependentUpon>SplashScreenLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\AlteraSenha\Interactors\AlteraSenhaInteractor.cs" />
-    <Compile Include="Modules\AlteraSenha\Interfaces\AlteraSenhaInterfaces.cs" />
-    <Compile Include="Modules\AlteraSenha\Presenters\AlteraSenhaPresenter.cs" />
-    <Compile Include="Modules\AlteraSenha\Routers\AlteraSenhaRouter.cs" />
-    <Compile Include="Modules\ConfigBanco\Interactors\ConfigBancoInteractor.cs" />
-    <Compile Include="Modules\ConfigBanco\Interfaces\ConfigBancoInterfaces.cs" />
-    <Compile Include="Modules\ConfigBanco\Presenters\ConfigBancoPresenter.cs" />
-    <Compile Include="Modules\ConfigBanco\Routers\ConfigBancoRouter.cs" />
-    <Compile Include="Modules\ConfigBanco\Views\ConfigBancoView.cs">
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaInteractor.cs" />
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaInterfaces.cs" />
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaPresenter.cs" />
+    <Compile Include="Modules\AlteraSenha\AlteraSenhaRouter.cs" />
+    <Compile Include="Modules\ConfigBanco\ConfigBancoInteractor.cs" />
+    <Compile Include="Modules\ConfigBanco\ConfigBancoInterfaces.cs" />
+    <Compile Include="Modules\ConfigBanco\ConfigBancoPresenter.cs" />
+    <Compile Include="Modules\ConfigBanco\ConfigBancoRouter.cs" />
+    <Compile Include="Modules\ConfigBanco\ConfigBancoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ConfigBanco\Views\ConfigBancoView.designer.cs">
+    <Compile Include="Modules\ConfigBanco\ConfigBancoView.designer.cs">
       <DependentUpon>ConfigBancoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Login\Interactors\LoginInteractor.cs" />
-    <Compile Include="Modules\Login\Interfaces\LoginInterfaces.cs" />
-    <Compile Include="Modules\Login\Presenters\LoginPresenter.cs" />
-    <Compile Include="Modules\Login\Routers\LoginRouter.cs" />
-    <Compile Include="Modules\Principal\Interactors\PrincipalInteractor.cs" />
-    <Compile Include="Modules\Principal\Interfaces\PrincipalInterfaces.cs" />
-    <Compile Include="Modules\Principal\Presenters\PrincipalPresenter.cs" />
-    <Compile Include="Modules\Principal\Routers\PrincipalRouter.cs" />
+    <Compile Include="Modules\Login\LoginInteractor.cs" />
+    <Compile Include="Modules\Login\LoginInterfaces.cs" />
+    <Compile Include="Modules\Login\LoginPresenter.cs" />
+    <Compile Include="Modules\Login\LoginRouter.cs" />
+    <Compile Include="Modules\Principal\PrincipalInteractor.cs" />
+    <Compile Include="Modules\Principal\PrincipalInterfaces.cs" />
+    <Compile Include="Modules\Principal\PrincipalPresenter.cs" />
+    <Compile Include="Modules\Principal\PrincipalRouter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashScreen\SplashScreenDownload.cs">
@@ -142,22 +142,22 @@
     <Compile Include="SplashScreen\SplashScreenHybrid.designer.cs">
       <DependentUpon>SplashScreenHybrid.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Modules\AlteraSenha\Views\AlteraSenhaView.resx">
+    <EmbeddedResource Include="Modules\AlteraSenha\AlteraSenhaView.resx">
       <DependentUpon>AlteraSenhaView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.resx">
+    <EmbeddedResource Include="Modules\AtualizaVersao\AtualizaVersaoView.resx">
       <DependentUpon>AtualizaVersaoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ConfigBanco\Views\ConfigBancoView.resx">
+    <EmbeddedResource Include="Modules\ConfigBanco\ConfigBancoView.resx">
       <DependentUpon>ConfigBancoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Login\Views\LoginView.resx">
+    <EmbeddedResource Include="Modules\Login\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Principal\Views\PrincipalView.resx">
+    <EmbeddedResource Include="Modules\Principal\PrincipalView.resx">
       <DependentUpon>PrincipalView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\TrocaSistema\Views\TrocaSistemaView.resx">
+    <EmbeddedResource Include="Modules\TrocaSistema\TrocaSistemaView.resx">
       <DependentUpon>TrocaSistemaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
