@@ -27,6 +27,11 @@ namespace VIPER.Modules.GeradorRelatorio.Presenters
             router.CarregarParametroRelatorio(descricao, xml, out ok, out xmlparameter);
         }
 
+        public void CarregarRelatorio(int? relatorio)
+        {
+            router.CarregarRelatorio(relatorio);
+        }
+
         public void Excluir(Relatorio entity)
         {
             interactor.Excluir(entity);

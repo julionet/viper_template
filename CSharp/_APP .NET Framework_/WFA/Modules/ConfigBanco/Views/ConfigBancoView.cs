@@ -29,7 +29,7 @@ namespace VIPER.Modules.ConfigBanco.Views
                     ServidorAPI = txtServico.Text
                 };
                 settings.Save();
-				XtraMessageBox.Show("Configurações salvas com sucesso!\r\nÉ necessário reiniciar o aplicativo!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                XtraMessageBox.Show("Configurações salvas com sucesso!\r\nÉ necessário reiniciar o aplicativo!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

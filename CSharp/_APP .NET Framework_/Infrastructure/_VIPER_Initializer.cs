@@ -27,20 +27,20 @@ namespace VIPER.Infrastructure
                 context.SaveChanges();
             }
         }
-		
+        
         private void InsertSistemaModuloFuncao(_VIPER_Context context)
         {
             if (context.Sistemas.Count() == 0)
             {
                 context.Sistemas.Add(new Sistema() { Codigo = "GERENCIADOR", Descricao = "Gerenciador de Sistemas", Tipo = "D", Interface = "H", Linha = 2, Tamanho = 120, Gerenciador = true, Ativo = true });
-				context.Sistemas.Add(new Sistema() { Codigo = "SISTEMA", Descricao = "__APPNAME__", Tipo = "D", Interface = "H", Linha = 2, Tamanho = 120, Gerenciador = false, Ativo = true, Imagem = null });
+                context.Sistemas.Add(new Sistema() { Codigo = "SISTEMA", Descricao = "__APPNAME__", Tipo = "D", Interface = "H", Linha = 2, Tamanho = 120, Gerenciador = false, Ativo = true, Imagem = null });
                 context.SaveChanges();
             }
 
             if (context.Modulos.Count() == 0)
             {
                 context.Modulos.Add(new Modulo() { Codigo = "MODULO", Descricao = "Gerenciador", Cor = 0, Navegacao = true, Administracao = false, SistemaId = 1, Imagem = ImageToByteArray(Properties.Resource.icon_manager_24) });
-				context.Modulos.Add(new Modulo() { Codigo = "ADMINISTRACAO", Descricao = "Sistema", Cor = 0, Navegacao = true, Administracao = true, SistemaId = 2, Imagem = ImageToByteArray(Properties.Resource.icon_sistema_24) });
+                context.Modulos.Add(new Modulo() { Codigo = "ADMINISTRACAO", Descricao = "Sistema", Cor = 0, Navegacao = true, Administracao = true, SistemaId = 2, Imagem = ImageToByteArray(Properties.Resource.icon_sistema_24) });
                 context.SaveChanges();
             }
 
@@ -49,12 +49,13 @@ namespace VIPER.Infrastructure
                 context.Funcaos.Add(new Funcao() { Codigo = "SISTEMA", Descricao = "Definição de Sistemas", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "SistemaView", Manutencao = true, ModuloId = 1 });
                 context.Funcaos.Add(new Funcao() { Codigo = "PARAMETRO", Descricao = "Definição de Parâmetros", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "ParametroView", Manutencao = true, ModuloId = 1 });
                 context.Funcaos.Add(new Funcao() { Codigo = "GERADOR_RELATORIO", Descricao = "Gerador de Relatórios", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "GeradorRelatorioView", Manutencao = false, ModuloId = 1 });
-				context.Funcaos.Add(new Funcao() { Codigo = "CONFIGURACOES", Descricao = "Configurações", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "ConfiguracaoView", Manutencao = false, ModuloId = 1 });
-				context.Funcaos.Add(new Funcao() { Codigo = "DESBLOQUEIO", Descricao = "Desbloqueio de Registros", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "DesbloqueioRegistroView", Manutencao = false, ModuloId = 2 });
-				context.Funcaos.Add(new Funcao() { Codigo = "CONTROLE_ACESSO", Descricao = "Controle de Acesso", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ControleAcessoView", Manutencao = false, ModuloId = 2 });
-				context.Funcaos.Add(new Funcao() { Codigo = "IMPORTA_RELATORIO", Descricao = "Importar Relatório", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ImportaRelatorioView", Manutencao = false, ModuloId = 2 });
-				context.Funcaos.Add(new Funcao() { Codigo = "PERFIL", Descricao = "Perfil", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "PerfilView", Manutencao = false, ModuloId = 2 });
-				context.Funcaos.Add(new Funcao() { Codigo = "USUARIO", Descricao = "Usuários", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "UsuarioView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "CONFIGURACOES", Descricao = "Configurações", Tipo = "F", NomeAssembly = "VIPER.Gerenciador", NomeFormulario = "ConfiguracaoView", Manutencao = false, ModuloId = 1 });
+                context.Funcaos.Add(new Funcao() { Codigo = "DESBLOQUEIO", Descricao = "Desbloqueio de Registros", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "DesbloqueioRegistroView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "CONTROLE_ACESSO", Descricao = "Controle de Acesso", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ControleAcessoView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "IMPORTA_RELATORIO", Descricao = "Importar Relatório", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ImportaRelatorioView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "PARAMETRO", Descricao = "Parâmetros do Sistema", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "ParametroView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "PERFIL", Descricao = "Perfil", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "PerfilView", Manutencao = false, ModuloId = 2 });
+                context.Funcaos.Add(new Funcao() { Codigo = "USUARIO", Descricao = "Usuários", Tipo = "F", NomeAssembly = "VIPER.Sistema", NomeFormulario = "UsuarioView", Manutencao = false, ModuloId = 2 });
                 context.SaveChanges();
             }
         }

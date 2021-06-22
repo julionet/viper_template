@@ -34,13 +34,13 @@ namespace VIPER.Modules.Perfil.Routers
             PerfilInteractor interactor = new PerfilInteractor();
             PerfilRouter router = new PerfilRouter();
             PerfilView form = new PerfilView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

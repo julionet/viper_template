@@ -38,13 +38,13 @@ namespace VIPER.Modules.Parametro.Routers
             ParametroInteractor interactor = new ParametroInteractor();
             ParametroRouter router = new ParametroRouter();
             ParametroView form = new ParametroView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

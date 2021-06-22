@@ -3,6 +3,7 @@ using VIPER.Entity;
 using VIPER.Modules.Principal.Interfaces;
 using VIPER.Service;
 using VIPER.WFA;
+using Chronus.Comum;
 using Chronus.DXperience;
 using DevExpress.Utils;
 using DevExpress.XtraBars.Navigation;
@@ -150,11 +151,10 @@ namespace VIPER.Modules.Principal.Views
             }
             else if (tipo.Equals("R"))
             {
-                //var splash = new Chronus.DXperience.SplashScreen("Carregando relatório...");
-                //var frm = new FrmParametroRelatorio(funcao);
-                //splash.FinalizarSplashScreen();
-                //return frm;
-                return null;
+                var splash = new Chronus.DXperience.SplashScreen("Carregando relatório...");
+                var frm = new FrmParametroRelatorio(funcao);
+                splash.FinalizarSplashScreen();
+                return frm;
             }
             else
                 return null;
@@ -191,7 +191,7 @@ namespace VIPER.Modules.Principal.Views
             if (confirmado)
             {
                 CreateTileBarPrincipal(Global.Instance.Sistema.Id, Global.Instance.UsuarioLogado.Id);
-				UpdateIconsNavPane();
+                UpdateIconsNavPane();
                 UpdateSearchFuncao();
             }
         }
@@ -416,7 +416,7 @@ namespace VIPER.Modules.Principal.Views
 
         public void SelecionarAcessoPorUsuarioModuloFalha()
         {
-			searchLookUpEditFuncao.Properties.DataSource = null;           
+            searchLookUpEditFuncao.Properties.DataSource = null;           
         }
 
         public void SelecionarAcessoPorUsuarioSistemaSucesso(List<UsuarioFuncaoDTO> acesso)

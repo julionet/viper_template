@@ -19,13 +19,13 @@ namespace VIPER.Modules.TrocaSistema.Routers
             TrocaSistemaInteractor interactor = new TrocaSistemaInteractor();
             TrocaSistemaRouter router = new TrocaSistemaRouter();
             TrocaSistemaView form = new TrocaSistemaView();
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

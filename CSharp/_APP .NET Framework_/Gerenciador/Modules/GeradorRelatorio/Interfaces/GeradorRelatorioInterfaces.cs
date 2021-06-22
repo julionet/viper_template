@@ -14,6 +14,7 @@ namespace VIPER.Modules.GeradorRelatorio.Interfaces
         void CarregarManutencao(BindingSource source, out bool ok);
         void CarregarImportaRelatorio();
         void CarregarParametroRelatorio(string descricao, string xml, out bool ok, out string xmlparameter);
+        void CarregarRelatorio(int? relatorio);
     }
 
     public interface IPresenterToViewGeradorRelatorio
@@ -53,5 +54,6 @@ namespace VIPER.Modules.GeradorRelatorio.Interfaces
         void CarregarManutencao(BindingSource source, out bool ok);
         void CarregarImportaRelatorio();
         void CarregarParametroRelatorio(string descricao, string xml, out bool ok, out string xmlparameter);
+        void CarregarRelatorio(int? relatorio);
     }
 }

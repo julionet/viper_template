@@ -24,7 +24,6 @@ namespace VIPER.Modules.Parametro.Views
 
         private void FrmDiretivas_Load(object sender, EventArgs e)
         {
-            _splash = new SplashScreen("Obtendo categorias...");
             presenter.SelecionarCategorias();
         }
 
@@ -104,10 +103,7 @@ namespace VIPER.Modules.Parametro.Views
         private void bindingSourceCategoria_CurrentChanged(object sender, EventArgs e)
         {
             if (bindingSourceCategoria.Current != null)
-            {
-                _splash = new SplashScreen("Obtendo parâmetros...");
                 presenter.SelecionarParametrosPorCategoria((bindingSourceCategoria.Current as DominioItem).Valor);
-            }
             else
                 detalheBindingSource.Clear();
         }
@@ -130,7 +126,6 @@ namespace VIPER.Modules.Parametro.Views
 
         public void SelecionarCategoriasSucesso(List<DominioItem> dados)
         {
-            _splash.FinalizarSplashScreen();
             bindingSourceCategoria.DataSource = dados;
             gridControlCategoria.Focus();
 
@@ -138,20 +133,17 @@ namespace VIPER.Modules.Parametro.Views
 
         public void SelecionarCategoriasFalha()
         {
-            _splash.FinalizarSplashScreen();
             gridControlCategoria.Focus();
         }
 
         public void SelecionarParametrosPorCategoriaSucesso(List<Entity.Parametro> parametros)
         {
-            _splash.FinalizarSplashScreen();
             detalheBindingSource.DataSource = parametros;
             gridViewParametros.RefreshData();
         }
 
         public void SelecionarParametrosPorCategoriaFalha()
         {
-            _splash.FinalizarSplashScreen();
             gridViewParametros.RefreshData();
         }
     }

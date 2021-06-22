@@ -10,7 +10,7 @@ namespace VIPER.Infrastructure.Mapping
         {
             ToTable("Relatorio");
             HasKey(c => c.Id);
-			Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(c => c.Codigo).HasMaxLength(20).IsRequired();
             Property(c => c.Nome).HasMaxLength(80).IsRequired();
             Property(c => c.Origem).HasMaxLength(1).IsRequired();
@@ -25,7 +25,7 @@ namespace VIPER.Infrastructure.Mapping
             Property(c => c.Visualizar).IsRequired();
             Property(c => c.EscalaX).IsRequired();
             Property(c => c.EscalaY).IsRequired();
-			Ignore(c => c.Selecionar);
+            Ignore(c => c.Selecionar);
         }
     }
 }

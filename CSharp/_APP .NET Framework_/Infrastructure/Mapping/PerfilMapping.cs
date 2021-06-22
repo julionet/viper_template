@@ -10,7 +10,7 @@ namespace VIPER.Infrastructure.Mapping
         {
             ToTable("Perfil");
             HasKey(c => c.Id);
-			Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(c => c.Descricao).HasMaxLength(60).IsRequired();
             HasMany(c => c.Usuario).WithMany(c => c.Perfil);
             Ignore(c => c.QuantidadeFuncoes);

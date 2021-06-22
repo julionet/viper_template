@@ -96,8 +96,8 @@ namespace VIPER.Controller.Controllers
         {
             return new DatabaseRepository().GetSerialNumberHD();
         }
-		
-		[HttpPost]
+        
+        [HttpPost]
         [Route("executarsql")]
         public List<LookupDataSourceDTO> ExecutarSQL([FromBody] string sql)
         {

@@ -28,13 +28,13 @@ namespace VIPER.Modules.Sistema.Routers
             SistemaInteractor interactor = new SistemaInteractor();
             SistemaRouter router = new SistemaRouter();
             SistemaView form = new SistemaView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

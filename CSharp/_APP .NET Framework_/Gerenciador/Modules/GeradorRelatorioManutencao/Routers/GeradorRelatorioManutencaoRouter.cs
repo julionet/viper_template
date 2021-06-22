@@ -19,13 +19,13 @@ namespace VIPER.Modules.GeradorRelatorioManutencao.Routers
             GeradorRelatorioManutencaoInteractor interactor = new GeradorRelatorioManutencaoInteractor();
             GeradorRelatorioManutencaoRouter router = new GeradorRelatorioManutencaoRouter();
             GeradorRelatorioManutencaoView form = new GeradorRelatorioManutencaoView(source);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

@@ -4,6 +4,7 @@ using VIPER.Modules.GeradorRelatorio.Presenters;
 using VIPER.Modules.GeradorRelatorio.Views;
 using Chronus.DXperience;
 using System.Windows.Forms;
+using Chronus.Comum;
 
 namespace VIPER.Modules.GeradorRelatorio.Routers
 {
@@ -38,6 +39,14 @@ namespace VIPER.Modules.GeradorRelatorio.Routers
                 ok = form.ShowDialog() == DialogResult.OK;
                 if (ok)
                     xmlparameter = form.XmlParameter;
+            }
+        }
+
+        public void CarregarRelatorio(int? relatorio)
+        {
+            using (var form = new FrmParametroRelatorio(relatorio))
+            {
+                form.ShowDialog();
             }
         }
 

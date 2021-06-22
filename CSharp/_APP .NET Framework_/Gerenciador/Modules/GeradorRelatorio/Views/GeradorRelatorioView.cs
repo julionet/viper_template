@@ -92,13 +92,15 @@ namespace VIPER.Modules.GeradorRelatorio.Views
                         designer.ShowDialog();
                         if (designer.Designer.Modified)
                         {
-                            if (XtraMessageBox.Show("Alterações no relatório não foram salvas, deseja salvar agora?", "Confirmação", 
+                            if (XtraMessageBox.Show("Alterações no relatório não foram salvas, deseja salvar agora?", "Confirmação",
                                 MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-                            (detalheBindingSource.Current as Entity.Relatorio).Modelo = designer.Designer.Report.SaveToString();
-                            (detalheBindingSource.Current as Entity.Relatorio).Tamanho = (detalheBindingSource.Current as Entity.Relatorio).Modelo.Length;
-                            (detalheBindingSource.Current as Entity.Relatorio).Modificado = DateTime.Now;
-                            detalheBindingSource.ResetCurrentItem();
-                            SalvarRelatorio(detalheBindingSource.Current as Entity.Relatorio);
+                            {
+                                (detalheBindingSource.Current as Entity.Relatorio).Modelo = designer.Designer.Report.SaveToString();
+                                (detalheBindingSource.Current as Entity.Relatorio).Tamanho = (detalheBindingSource.Current as Entity.Relatorio).Modelo.Length;
+                                (detalheBindingSource.Current as Entity.Relatorio).Modificado = DateTime.Now;
+                                detalheBindingSource.ResetCurrentItem();
+                                SalvarRelatorio(detalheBindingSource.Current as Entity.Relatorio);
+                            }
                         }
                         FiltrarRelatorios();
                     }
@@ -121,15 +123,10 @@ namespace VIPER.Modules.GeradorRelatorio.Views
             gridView.ButtonsPanel.Buttons.Add(new EditorButton(ButtonPredefines.Glyph) { Caption = "Executar" });
             gridView.ButtonsPanel.Buttons[4].Click += (s, e) =>
             {
-                /*if (!string.IsNullOrWhiteSpace((detalheBindingSource.Current as Entity.Relatorio).Parametro))
-                {
-                    using (FrmParametroRelatorio form = new FrmParametroRelatorio((int?)(detalheBindingSource.Current as Entity.Relatorio).Id))
-                    {
-                        form.ShowDialog();
-                    }
-                }
+                if (!string.IsNullOrWhiteSpace((detalheBindingSource.Current as Entity.Relatorio).Parametro))
+                    presenter.CarregarRelatorio((int?)(detalheBindingSource.Current as Entity.Relatorio).Id);
                 else
-                    XtraMessageBox.Show("Não é possível executar um relatório sem parâmetros definidos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);*/
+                    XtraMessageBox.Show("Não é possível executar um relatório sem parâmetros definidos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             };
 
             base.CreateGridButtons(gridView);

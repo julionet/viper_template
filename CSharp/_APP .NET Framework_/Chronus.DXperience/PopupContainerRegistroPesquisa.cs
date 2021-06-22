@@ -17,8 +17,8 @@ namespace Chronus.DXperience
             pesquisa.Add(new RegistroPesquisa() { Id = 1, Descricao = "Descrição", Campo = "Descricao", Padrao = true, Tipo = typeof(string), Tamanho = 100 });
             return pesquisa;
         }
-		
-		public static List<RegistroPesquisa> RegistroPesquisaLogin()
+        
+        public static List<RegistroPesquisa> RegistroPesquisaLogin()
         {
             List<RegistroPesquisa> pesquisa = new List<RegistroPesquisa>();
             pesquisa.Add(new RegistroPesquisa() { Id = 1, Descricao = "Login", Campo = "Login", Padrao = true, Tipo = typeof(string), Tamanho = 100 });

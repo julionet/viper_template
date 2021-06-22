@@ -29,7 +29,6 @@ namespace VIPER.Modules.Login.Views
         private void InitializeComponent()
         {
             DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, null, true, true);
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             this.lblCopyright = new System.Windows.Forms.Label();
             this.txtUsuario = new DevExpress.XtraEditors.TextEdit();
             this.txtSenha = new DevExpress.XtraEditors.TextEdit();
@@ -45,6 +44,8 @@ namespace VIPER.Modules.Login.Views
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.lblFechar = new DevExpress.XtraEditors.LabelControl();
             this.pcbFechar = new System.Windows.Forms.PictureBox();
+            this.labelControlVersao = new DevExpress.XtraEditors.LabelControl();
+            this.labelControlNomeApp = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pclLogin)).BeginInit();
@@ -123,6 +124,8 @@ namespace VIPER.Modules.Login.Views
             this.pclLogin.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.pclLogin.Appearance.Options.UseBackColor = true;
             this.pclLogin.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pclLogin.Controls.Add(this.labelControlNomeApp);
+            this.pclLogin.Controls.Add(this.labelControlVersao);
             this.pclLogin.Controls.Add(this.lblConfiguracao);
             this.pclLogin.Controls.Add(this.btnIniciar);
             this.pclLogin.Controls.Add(this.lclSistema);
@@ -241,6 +244,34 @@ namespace VIPER.Modules.Login.Views
             this.pcbFechar.TabStop = false;
             this.pcbFechar.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // labelControlVersao
+            // 
+            this.labelControlVersao.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControlVersao.Appearance.Options.UseForeColor = true;
+            this.labelControlVersao.Appearance.Options.UseTextOptions = true;
+            this.labelControlVersao.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControlVersao.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControlVersao.Location = new System.Drawing.Point(8, 123);
+            this.labelControlVersao.Name = "labelControlVersao";
+            this.labelControlVersao.Size = new System.Drawing.Size(329, 13);
+            this.labelControlVersao.TabIndex = 14;
+            this.labelControlVersao.Text = "Versão 0.0.0.0";
+            // 
+            // labelControlNomeApp
+            // 
+            this.labelControlNomeApp.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControlNomeApp.Appearance.ForeColor = System.Drawing.Color.White;
+            this.labelControlNomeApp.Appearance.Options.UseFont = true;
+            this.labelControlNomeApp.Appearance.Options.UseForeColor = true;
+            this.labelControlNomeApp.Appearance.Options.UseTextOptions = true;
+            this.labelControlNomeApp.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControlNomeApp.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControlNomeApp.Location = new System.Drawing.Point(8, 92);
+            this.labelControlNomeApp.Name = "labelControlNomeApp";
+            this.labelControlNomeApp.Size = new System.Drawing.Size(329, 25);
+            this.labelControlNomeApp.TabIndex = 15;
+            this.labelControlNomeApp.Text = "Nome APP";
+            // 
             // LoginView
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(169)))), ((int)(((byte)(254)))));
@@ -253,14 +284,13 @@ namespace VIPER.Modules.Login.Views
             this.Controls.Add(this.pclLogin);
             this.Controls.Add(this.lblCopyright);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("LoginView.IconOptions.Icon")));
             this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "LoginView";
             this.Padding = new System.Windows.Forms.Padding(4);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "__APPNAME__";
+            this.Text = "App";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSenha.Properties)).EndInit();
@@ -295,5 +325,7 @@ namespace VIPER.Modules.Login.Views
         private DevExpress.XtraEditors.LabelControl lclSistema;
         private DevExpress.XtraEditors.LookUpEdit letSistema;
         private DevExpress.XtraEditors.LabelControl lblConfiguracao;
+        private DevExpress.XtraEditors.LabelControl labelControlNomeApp;
+        private DevExpress.XtraEditors.LabelControl labelControlVersao;
     }
 }

@@ -47,8 +47,8 @@ namespace VIPER.Service.Webapi_References
         {
             return WebapiSerializer.HttpGet<int>(_uri, "obterdatabase");
         }
-		
-		public List<LookupDataSourceDTO> ExecutarSQL(string sql)
+        
+        public List<LookupDataSourceDTO> ExecutarSQL(string sql)
         {
             return WebapiSerializer.HttpPost<string, List<LookupDataSourceDTO>>(sql, _uri, "executarsql");
         }

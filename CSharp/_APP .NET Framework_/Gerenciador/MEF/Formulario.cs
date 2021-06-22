@@ -19,8 +19,8 @@ namespace VIPER.Gerenciador.MEF
             {
                 case "SistemaView": return (XtraForm)Modules.Sistema.Routers.SistemaRouter.New(funcao);
                 case "ParametroView": return (XtraForm)Modules.Parametro.Routers.ParametroRouter.New(funcao);
-				case "GeradorRelatorioView": return (XtraForm)Modules.GeradorRelatorio.Routers.GeradorRelatorioRouter.New(funcao);
-				case "ConfiguracaoView": return (XtraForm)Modules.Configuracao.Routers.ConfiguracaoRouter.New(funcao);
+                case "GeradorRelatorioView": return (XtraForm)Modules.GeradorRelatorio.Routers.GeradorRelatorioRouter.New(funcao);
+                case "ConfiguracaoView": return (XtraForm)Modules.Configuracao.Routers.ConfiguracaoRouter.New(funcao);
                 default:
                     return null;
             }

@@ -68,6 +68,16 @@
     <Compile Include="Modules\AlteraSenha\Views\AlteraSenhaView.designer.cs">
       <DependentUpon>AlteraSenhaView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modules\AtualizaVersao\Interactors\AtualizaVersaoInteractor.cs" />
+    <Compile Include="Modules\AtualizaVersao\Interfaces\AtualizaVersaoInterfaces.cs" />
+    <Compile Include="Modules\AtualizaVersao\Presenters\AtualizaVersaoPresenter.cs" />
+    <Compile Include="Modules\AtualizaVersao\Routers\AtualizaVersaoRouter.cs" />
+    <Compile Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.Designer.cs">
+      <DependentUpon>AtualizaVersaoView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Login\Views\LoginView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +145,9 @@
     <EmbeddedResource Include="Modules\AlteraSenha\Views\AlteraSenhaView.resx">
       <DependentUpon>AlteraSenhaView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AtualizaVersao\Views\AtualizaVersaoView.resx">
+      <DependentUpon>AtualizaVersaoView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modules\ConfigBanco\Views\ConfigBancoView.resx">
       <DependentUpon>ConfigBancoView.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,7 +199,7 @@
       <Project>{e55bb26e-f902-4537-9379-336af94dae01}</Project>
       <Name>VIPER.Entity</Name>
     </ProjectReference>
-	<ProjectReference Include="..\VIPER.Gerenciador\VIPER.Gerenciador.csproj">
+    <ProjectReference Include="..\VIPER.Gerenciador\VIPER.Gerenciador.csproj">
       <Project>{c639aa06-7638-4e2f-a916-1aa7ee8cc720}</Project>
       <Name>VIPER.Gerenciador</Name>
     </ProjectReference>
@@ -194,9 +207,13 @@
       <Project>{1EEE67A7-6CDC-4BFC-9002-566FE928488C}</Project>
       <Name>VIPER.Service</Name>
     </ProjectReference>
-	    <ProjectReference Include="..\VIPER.Sistema\VIPER.Sistema.csproj">
+    <ProjectReference Include="..\VIPER.Sistema\VIPER.Sistema.csproj">
       <Project>{41a52118-f1d0-495b-bd09-6cbab005a336}</Project>
       <Name>VIPER.Sistema</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chronus.Comum\Chronus.Comum.csproj">
+      <Project>{70ed11fc-8ca1-4384-a226-9b3c9c7b8038}</Project>
+      <Name>Chronus.Comum</Name>
     </ProjectReference>
     <ProjectReference Include="..\Chronus.DXperience\Chronus.DXperience.csproj">
       <Project>{983964af-7c2b-4e4e-afc1-37f149f90bdf}</Project>

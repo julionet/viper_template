@@ -19,13 +19,13 @@ namespace VIPER.Modules.PermissaoAcesso.Routers
             PermissaoAcessoInteractor interactor = new PermissaoAcessoInteractor();
             PermissaoAcessoRouter router = new PermissaoAcessoRouter();
             PermissaoAcessoView form = new PermissaoAcessoView(descricao, incluir, alterar, excluir);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

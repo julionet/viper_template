@@ -43,13 +43,13 @@ namespace VIPER.Modules.Principal.Routers
             PrincipalInteractor interactor = new PrincipalInteractor();
             PrincipalRouter router = new PrincipalRouter();
             PrincipalView form = new PrincipalView();
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

@@ -1,5 +1,4 @@
 using VIPER.DTO;
-using VIPER.Entity;
 using VIPER.Modules.Login.Interfaces;
 using VIPER.Service;
 using Chronus.DXperience;
@@ -8,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace VIPER.Modules.Login.Views
@@ -28,6 +28,8 @@ namespace VIPER.Modules.Login.Views
                 Interface.EnterMoveNextControl(pclLogin);
 
             lblConfiguracao.Visible = configurabanco;
+            labelControlNomeApp.Text = "__APPNAME__";
+            labelControlVersao.Text = $"Versão {Assembly.GetExecutingAssembly().GetName().Version}";
         }
 
         public void DeveAlterarSenhaFalha()

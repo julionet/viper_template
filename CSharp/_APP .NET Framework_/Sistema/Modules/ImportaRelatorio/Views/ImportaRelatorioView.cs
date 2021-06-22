@@ -20,11 +20,7 @@ namespace VIPER.Modules.ImportaRelatorio.Views
 
         public ImportaRelatorioView(int funcao)
         {
-            _splash.FinalizarSplashScreen();
-            XtraMessageBox.Show("Relatórios importados com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            betArquivo.EditValue = null;
-            clbcRelatorios.Items.Clear();
-            btnOk.Enabled = false;
+            InitializeComponent();
         }
 
         public void ImportarFalha(string mensagem)
@@ -35,7 +31,11 @@ namespace VIPER.Modules.ImportaRelatorio.Views
 
         public void ImportarSucesso()
         {
-            throw new NotImplementedException();
+            _splash.FinalizarSplashScreen();
+            XtraMessageBox.Show("Relatórios importados com sucesso!", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            betArquivo.EditValue = null;
+            clbcRelatorios.Items.Clear();
+            btnOk.Enabled = false;
         }
 
         private void betArquivo_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)

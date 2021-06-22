@@ -25,7 +25,7 @@ namespace VIPER.Modules.GeradorRelatorio.Interactors
             if (dados.Count != 0)
                 presenter.FiltrarSucesso(dados);
             else
-                presenter.FiltrarFalha("Nenhum registro encontrado com critério de busca!");
+                presenter.FiltrarFalha("Nenhum registro encontrado com critÃ©rio de busca!");
         }
 
         public void Salvar(Relatorio entity, DesignerControl designer, bool close)

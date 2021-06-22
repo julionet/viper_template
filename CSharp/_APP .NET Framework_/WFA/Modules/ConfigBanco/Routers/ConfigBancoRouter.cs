@@ -19,13 +19,13 @@ namespace VIPER.Modules.ConfigBanco.Routers
             ConfigBancoInteractor interactor = new ConfigBancoInteractor();
             ConfigBancoRouter router = new ConfigBancoRouter();
             ConfigBancoView form = new ConfigBancoView();
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

@@ -10,7 +10,7 @@ namespace VIPER.Infrastructure.Mapping
         {
             ToTable("Parametro");
             HasKey(c => c.Id);
-			Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(c => c.Codigo).HasMaxLength(10).IsRequired();
             Property(c => c.Descricao).HasMaxLength(120).IsRequired();
             Property(c => c.Observacao).IsMaxLength();

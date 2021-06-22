@@ -19,13 +19,13 @@ namespace VIPER.Modules.ParametroEdicao.Routers
             ParametroEdicaoInteractor interactor = new ParametroEdicaoInteractor();
             ParametroEdicaoRouter router = new ParametroEdicaoRouter();
             ParametroEdicaoView form = new ParametroEdicaoView(descricao, tipocomponente, valorpadrao, lista, valorpersonalizado, editavel);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

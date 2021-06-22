@@ -19,13 +19,13 @@ namespace VIPER.Modules.Usuario.Routers
             UsuarioInteractor interactor = new UsuarioInteractor();
             UsuarioRouter router = new UsuarioRouter();
             UsuarioView form = new UsuarioView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

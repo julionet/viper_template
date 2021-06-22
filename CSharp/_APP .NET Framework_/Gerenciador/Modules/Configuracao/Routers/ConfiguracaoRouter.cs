@@ -19,13 +19,13 @@ namespace VIPER.Modules.Configuracao.Routers
             ConfiguracaoInteractor interactor = new ConfiguracaoInteractor();
             ConfiguracaoRouter router = new ConfiguracaoRouter();
             ConfiguracaoView form = new ConfiguracaoView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

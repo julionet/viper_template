@@ -19,13 +19,13 @@ namespace VIPER.Modules.DesbloqueioRegistro.Routers
             DesbloqueioRegistroInteractor interactor = new DesbloqueioRegistroInteractor();
             DesbloqueioRegistroRouter router = new DesbloqueioRegistroRouter();
             DesbloqueioRegistroView form = new DesbloqueioRegistroView(funcao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

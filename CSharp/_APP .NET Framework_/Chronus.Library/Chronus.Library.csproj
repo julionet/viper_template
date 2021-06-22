@@ -49,6 +49,7 @@
     <Compile Include="Classe.cs" />
     <Compile Include="ConnectionString.cs" />
 	<Compile Include="Conversion.cs" />
+	<Compile Include="DynamicCode.cs" />
 	<Compile Include="Funcoes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security.cs" />

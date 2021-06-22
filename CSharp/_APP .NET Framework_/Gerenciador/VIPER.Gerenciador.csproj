@@ -192,6 +192,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+	<ProjectReference Include="..\Chronus.Comum\Chronus.Comum.csproj">
+      <Project>{70ED11FC-8CA1-4384-A226-9B3C9C7B8038}</Project>
+      <Name>Chronus.Comum</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VIPER.DTO\VIPER.DTO.csproj">
       <Project>{ae6a2589-6ea5-4511-97fe-c9cd2aab3ae9}</Project>
       <Name>VIPER.DTO</Name>

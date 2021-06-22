@@ -27,13 +27,13 @@ namespace VIPER.Modules.Modulo.Routers
             ModuloInteractor interactor = new ModuloInteractor();
             ModuloRouter router = new ModuloRouter();
             ModuloView form = new ModuloView(source, funcoes, id, descricao);
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

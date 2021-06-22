@@ -37,14 +37,14 @@ namespace VIPER.Modules.Usuario.Views
             principalBindingSource.ResetCurrentItem();
 
             ckeNuncaExpira_CheckedChanged(null, null);
-			txtSenha.Enabled = true;
+            txtSenha.Enabled = true;
         }
 
         protected override void AlterarRegistro()
         {
             iKey = (principalBindingSource.Current as Entity.Usuario).Id;
             ckeNuncaExpira_CheckedChanged(null, null);
-			txtSenha.Enabled = false;
+            txtSenha.Enabled = false;
         }
 
         protected override void ObterDadosPrincipal()
