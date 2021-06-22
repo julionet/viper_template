@@ -19,13 +19,13 @@ namespace NAMESPACE.Modules.__MODULENAME__.Routers
             VIPERInteractor interactor = new VIPERInteractor();
             VIPERRouter router = new VIPERRouter();
             VIPERView form = new VIPERView();
-			
+            
             form.presenter = presenter;
 
             presenter.interactor = interactor;
             presenter.router = router;
             presenter.view = form;
-			
+            
             interactor.presenter = presenter;
 
             return form;

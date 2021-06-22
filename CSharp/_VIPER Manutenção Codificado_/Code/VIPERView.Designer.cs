@@ -95,7 +95,7 @@
             // 
             // gclPrincipal
             // 
-			this.gclPrincipal.DataSource = this.principalBindingSource;
+            this.gclPrincipal.DataSource = this.principalBindingSource;
             this.gclPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gclPrincipal.Location = new System.Drawing.Point(0, 3);
             this.gclPrincipal.MainView = this.gvwAcesso;
@@ -118,10 +118,10 @@
             this.gvwAcesso.OptionsCustomization.AllowQuickHideColumns = false;
             this.gvwAcesso.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gvwAcesso.OptionsSelection.InvertSelection = true;
-			this.gvwAcesso.OptionsView.ColumnAutoWidth = false;
+            this.gvwAcesso.OptionsView.ColumnAutoWidth = false;
             this.gvwAcesso.OptionsView.ShowGroupPanel = false;
             this.gvwAcesso.OptionsView.ShowIndicator = false;
-			this.gvwAcesso.DoubleClick += new System.EventHandler(this.gvwAcesso_DoubleClick);
+            this.gvwAcesso.DoubleClick += new System.EventHandler(this.gvwAcesso_DoubleClick);
             // 
             // ClienteView
             // 
