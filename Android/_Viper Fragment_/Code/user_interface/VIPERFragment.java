@@ -1,5 +1,5 @@
 //
-//  __MODULENAME__View.java
+//  __MODULENAME__Fragment.java
 //  __APPNAME__
 //
 //  Created by __USERNAME__ on __DATETIME__.
