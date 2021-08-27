@@ -12,7 +12,7 @@ namespace NAMESPACE.Controller.Controllers
         private string _mensagem = "";
 
         [HttpPost]
-		[Route("salvar")]
+        [Route("salvar")]
         public string Salvar(VIPER entity)
         {
             using (var context = new _NAMESPACE_Context())
@@ -21,10 +21,10 @@ namespace NAMESPACE.Controller.Controllers
                 {
                     using (var repository = new VIPERRepository(context))
                     {
-						if (entity.Id == 0)
-							_mensagem = repository.Incluir(entity);
-						else
-							_mensagem = repository.Alterar(entity);
+                        if (entity.Id == 0)
+                            _mensagem = repository.Incluir(entity);
+                        else
+                            _mensagem = repository.Alterar(entity);
 
                         if (_mensagem == "")
                         {
@@ -37,8 +37,8 @@ namespace NAMESPACE.Controller.Controllers
                     }
                 }
             }
-			
-			return _mensagem;
+            
+            return _mensagem;
         }
 
         [HttpPost]
@@ -64,8 +64,8 @@ namespace NAMESPACE.Controller.Controllers
                     }
                 }
             }
-			
-			return _mensagem;
+            
+            return _mensagem;
         }
 
         [HttpGet]
@@ -76,7 +76,7 @@ namespace NAMESPACE.Controller.Controllers
         }
 
         [HttpGet]
-		[Route("selecionartodos")]
+        [Route("selecionartodos")]
         public IEnumerable<VIPER> SelecionarTodos()
         {
             return new VIPERRepository().SelecionarTodos();

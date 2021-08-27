@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronus.Library", "Chronus.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronus.DXperience", "Chronus.DXperience\Chronus.DXperience.csproj", "{983964AF-7C2B-4E4E-AFC1-37F149F90BDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chronus.Comum", "Chronus.Comum\Chronus.Comum.csproj", "{70ED11FC-8CA1-4384-A226-9B3C9C7B8038}"
+EndProject
 
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

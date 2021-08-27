@@ -1,4 +1,4 @@
-﻿using VIPER.Entity;
+using VIPER.Entity;
 using VIPER.Service;
 using Chronus.DXperience;
 using System;
@@ -80,10 +80,13 @@ namespace VIPER.WFA
 
                 if (VerificarAtualizacaoPendente())
                 {
-                    //if (new FrmAtualizacaoVersao().ShowDialog() == DialogResult.OK)
-                        return "";
-                    //else
-                    //    return "Atualização cancelada pelo usuário!";
+                    using (var form = Modules.AtualizaVersao.Routers.AtualizaVersaoRouter.New())
+                    {
+                        if (form.ShowDialog() == DialogResult.OK)
+                            return "";
+                        else
+                            return "Atualização cancelada pelo usuário!";
+                    }
                 }
                 else
                     return "";

@@ -60,8 +60,8 @@ namespace VIPER.Controller.Controllers
         {
             return new FuncaoRepository().SelecionarTodosCompleto().ToList();
         }
-		
-		[HttpGet]
+        
+        [HttpGet]
         [Route("selecionarrelatorioporsistema/{sistema}")]
         public List<Funcao> SelecionarRelatorioPorSistema(int sistema)
         {

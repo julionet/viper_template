@@ -10,7 +10,7 @@ namespace VIPER.Infrastructure.Mapping
         {
             ToTable("Sequencial");
             HasKey(c => c.Id);
-			Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(c => c.Nome).HasMaxLength(60).IsRequired();
             Property(c => c.Valor).IsRequired();
         }

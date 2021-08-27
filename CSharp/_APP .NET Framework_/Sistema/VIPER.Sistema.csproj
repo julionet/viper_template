@@ -54,94 +54,94 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MEF\Formulario.cs" />
-    <Compile Include="Modules\ControleAcesso\Interactors\ControleAcessoInteractor.cs" />
-    <Compile Include="Modules\ControleAcesso\Interfaces\ControleAcessoInterfaces.cs" />
-    <Compile Include="Modules\ControleAcesso\Presenters\ControleAcessoPresenter.cs" />
-    <Compile Include="Modules\ControleAcesso\Routers\ControleAcessoRouter.cs" />
-    <Compile Include="Modules\ControleAcesso\Views\ControleAcessoView.cs">
+    <Compile Include="Modules\ControleAcesso\ControleAcessoInteractor.cs" />
+    <Compile Include="Modules\ControleAcesso\ControleAcessoInterfaces.cs" />
+    <Compile Include="Modules\ControleAcesso\ControleAcessoPresenter.cs" />
+    <Compile Include="Modules\ControleAcesso\ControleAcessoRouter.cs" />
+    <Compile Include="Modules\ControleAcesso\ControleAcessoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ControleAcesso\Views\ControleAcessoView.Designer.cs">
+    <Compile Include="Modules\ControleAcesso\ControleAcessoView.Designer.cs">
       <DependentUpon>ControleAcessoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\DesbloqueioRegistro\Interactors\DesbloqueioRegistroInteractor.cs" />
-    <Compile Include="Modules\DesbloqueioRegistro\Interfaces\DesbloqueioRegistroInterfaces.cs" />
-    <Compile Include="Modules\DesbloqueioRegistro\Presenters\DesbloqueioRegistroPresenter.cs" />
-    <Compile Include="Modules\DesbloqueioRegistro\Routers\DesbloqueioRegistroRouter.cs" />
-    <Compile Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.cs">
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroInteractor.cs" />
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroInterfaces.cs" />
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroPresenter.cs" />
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroRouter.cs" />
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.Designer.cs">
+    <Compile Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroView.Designer.cs">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\ImportaRelatorio\Interactors\ImportaRelatorioInteractor.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Interfaces\ImportaRelatorioInterfaces.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Presenters\ImportaRelatorioPresenter.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Routers\ImportaRelatorioRouter.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.cs">
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioInteractor.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioInterfaces.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioPresenter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioRouter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.Designer.cs">
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioView.Designer.cs">
       <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\ParametroEdicao\Interactors\ParametroEdicaoInteractor.cs" />
-    <Compile Include="Modules\ParametroEdicao\Interfaces\ParametroEdicaoInterfaces.cs" />
-    <Compile Include="Modules\ParametroEdicao\Presenters\ParametroEdicaoPresenter.cs" />
-    <Compile Include="Modules\ParametroEdicao\Routers\ParametroEdicaoRouter.cs" />
-    <Compile Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.cs">
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoInteractor.cs" />
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoInterfaces.cs" />
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoPresenter.cs" />
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoRouter.cs" />
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.designer.cs">
+    <Compile Include="Modules\ParametroEdicao\ParametroEdicaoView.designer.cs">
       <DependentUpon>ParametroEdicaoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\ParametroUsuario\Interactors\ParametroUsuarioInteractor.cs" />
-    <Compile Include="Modules\ParametroUsuario\Interfaces\ParametroUsuarioInterfaces.cs" />
-    <Compile Include="Modules\ParametroUsuario\Presenters\ParametroUsuarioPresenter.cs" />
-    <Compile Include="Modules\ParametroUsuario\Routers\ParametroUsuarioRouter.cs" />
-    <Compile Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.cs">
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioInteractor.cs" />
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioInterfaces.cs" />
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioPresenter.cs" />
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioRouter.cs" />
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.Designer.cs">
+    <Compile Include="Modules\ParametroUsuario\ParametroUsuarioView.Designer.cs">
       <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Parametro\Interactors\ParametroInteractor.cs" />
-    <Compile Include="Modules\Parametro\Interfaces\ParametroInterfaces.cs" />
-    <Compile Include="Modules\Parametro\Presenters\ParametroPresenter.cs" />
-    <Compile Include="Modules\Parametro\Routers\ParametroRouter.cs" />
-    <Compile Include="Modules\Parametro\Views\ParametroView.cs">
+    <Compile Include="Modules\Parametro\ParametroInteractor.cs" />
+    <Compile Include="Modules\Parametro\ParametroInterfaces.cs" />
+    <Compile Include="Modules\Parametro\ParametroPresenter.cs" />
+    <Compile Include="Modules\Parametro\ParametroRouter.cs" />
+    <Compile Include="Modules\Parametro\ParametroView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Parametro\Views\ParametroView.designer.cs">
+    <Compile Include="Modules\Parametro\ParametroView.designer.cs">
       <DependentUpon>ParametroView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Perfil\Interactors\PerfilInteractor.cs" />
-    <Compile Include="Modules\Perfil\Interfaces\PerfilInterfaces.cs" />
-    <Compile Include="Modules\Perfil\Presenters\PerfilPresenter.cs" />
-    <Compile Include="Modules\Perfil\Routers\PerfilRouter.cs" />
-    <Compile Include="Modules\Perfil\Views\PerfilView.cs">
+    <Compile Include="Modules\Perfil\PerfilInteractor.cs" />
+    <Compile Include="Modules\Perfil\PerfilInterfaces.cs" />
+    <Compile Include="Modules\Perfil\PerfilPresenter.cs" />
+    <Compile Include="Modules\Perfil\PerfilRouter.cs" />
+    <Compile Include="Modules\Perfil\PerfilView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Perfil\Views\PerfilView.Designer.cs">
+    <Compile Include="Modules\Perfil\PerfilView.Designer.cs">
       <DependentUpon>PerfilView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\PermissaoAcesso\Interactors\PermissaoAcessoInteractor.cs" />
-    <Compile Include="Modules\PermissaoAcesso\Interfaces\PermissaoAcessoInterfaces.cs" />
-    <Compile Include="Modules\PermissaoAcesso\Presenters\PermissaoAcessoPresenter.cs" />
-    <Compile Include="Modules\PermissaoAcesso\Routers\PermissaoAcessoRouter.cs" />
-    <Compile Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.cs">
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoInteractor.cs" />
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoInterfaces.cs" />
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoPresenter.cs" />
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoRouter.cs" />
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.designer.cs">
+    <Compile Include="Modules\PermissaoAcesso\PermissaoAcessoView.designer.cs">
       <DependentUpon>PermissaoAcessoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Usuario\Interactors\UsuarioInteractor.cs" />
-    <Compile Include="Modules\Usuario\Interfaces\UsuarioInterfaces.cs" />
-    <Compile Include="Modules\Usuario\Presenters\UsuarioPresenter.cs" />
-    <Compile Include="Modules\Usuario\Routers\UsuarioRouter.cs" />
-    <Compile Include="Modules\Usuario\Views\UsuarioView.cs">
+    <Compile Include="Modules\Usuario\UsuarioInteractor.cs" />
+    <Compile Include="Modules\Usuario\UsuarioInterfaces.cs" />
+    <Compile Include="Modules\Usuario\UsuarioPresenter.cs" />
+    <Compile Include="Modules\Usuario\UsuarioRouter.cs" />
+    <Compile Include="Modules\Usuario\UsuarioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Usuario\Views\UsuarioView.Designer.cs">
+    <Compile Include="Modules\Usuario\UsuarioView.Designer.cs">
       <DependentUpon>UsuarioView.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,31 +170,31 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Modules\ControleAcesso\Views\ControleAcessoView.resx">
+    <EmbeddedResource Include="Modules\ControleAcesso\ControleAcessoView.resx">
       <DependentUpon>ControleAcessoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\DesbloqueioRegistro\Views\DesbloqueioRegistroView.resx">
+    <EmbeddedResource Include="Modules\DesbloqueioRegistro\DesbloqueioRegistroView.resx">
       <DependentUpon>DesbloqueioRegistroView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.resx">
+    <EmbeddedResource Include="Modules\ImportaRelatorio\ImportaRelatorioView.resx">
       <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ParametroEdicao\Views\ParametroEdicaoView.resx">
+    <EmbeddedResource Include="Modules\ParametroEdicao\ParametroEdicaoView.resx">
       <DependentUpon>ParametroEdicaoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ParametroUsuario\Views\ParametroUsuarioView.resx">
+    <EmbeddedResource Include="Modules\ParametroUsuario\ParametroUsuarioView.resx">
       <DependentUpon>ParametroUsuarioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Parametro\Views\ParametroView.resx">
+    <EmbeddedResource Include="Modules\Parametro\ParametroView.resx">
       <DependentUpon>ParametroView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Perfil\Views\PerfilView.resx">
+    <EmbeddedResource Include="Modules\Perfil\PerfilView.resx">
       <DependentUpon>PerfilView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\PermissaoAcesso\Views\PermissaoAcessoView.resx">
+    <EmbeddedResource Include="Modules\PermissaoAcesso\PermissaoAcessoView.resx">
       <DependentUpon>PermissaoAcessoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Usuario\Views\UsuarioView.resx">
+    <EmbeddedResource Include="Modules\Usuario\UsuarioView.resx">
       <DependentUpon>UsuarioView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />

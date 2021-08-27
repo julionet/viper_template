@@ -2,8 +2,8 @@
 {
     public sealed class Parametros
     {
-		private static readonly int _versaoatualbancodados = 1;
-		
+        private static readonly int _versaoatualbancodados = 1;
+        
         private static readonly Parametros _instance = new Parametros();
 
         private Parametros() { }
@@ -40,8 +40,8 @@
                 return _versaobanco.Value;
             }
         }
-		
-		public bool PrecisaAtualizarBanco
+        
+        public bool PrecisaAtualizarBanco
         {
             get { return VersaoBanco < _versaoatualbancodados; }
         }

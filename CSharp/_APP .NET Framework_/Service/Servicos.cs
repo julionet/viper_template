@@ -4,8 +4,8 @@ namespace VIPER.Service
 {
     public static class Servicos
     {
-		public static AtualizacaoService atualizacaoService = new AtualizacaoService(Global.Instance.ServidorAPI + "atualizacao/");
-		public static BloqueioService bloqueioService = new BloqueioService(Global.Instance.ServidorAPI + "bloqueio/");
+        public static AtualizacaoService atualizacaoService = new AtualizacaoService(Global.Instance.ServidorAPI + "atualizacao/");
+        public static BloqueioService bloqueioService = new BloqueioService(Global.Instance.ServidorAPI + "bloqueio/");
         public static DashboardService dashboardService = new DashboardService(Global.Instance.ServidorAPI + "dashboard/");
         public static DatabaseService databaseService = new DatabaseService(Global.Instance.ServidorAPI + "database/");
         public static DominioItemService dominioItemService = new DominioItemService(Global.Instance.ServidorAPI + "dominioitem/");

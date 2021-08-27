@@ -72,84 +72,84 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MEF\Formulario.cs" />
-    <Compile Include="Modules\Configuracao\Interactors\ConfiguracaoInteractor.cs" />
-    <Compile Include="Modules\Configuracao\Interfaces\ConfiguracaoInterfaces.cs" />
-    <Compile Include="Modules\Configuracao\Presenters\ConfiguracaoPresenter.cs" />
-    <Compile Include="Modules\Configuracao\Routers\ConfiguracaoRouter.cs" />
-    <Compile Include="Modules\Configuracao\Views\ConfiguracaoView.cs">
+    <Compile Include="Modules\Configuracao\ConfiguracaoInteractor.cs" />
+    <Compile Include="Modules\Configuracao\ConfiguracaoInterfaces.cs" />
+    <Compile Include="Modules\Configuracao\ConfiguracaoPresenter.cs" />
+    <Compile Include="Modules\Configuracao\ConfiguracaoRouter.cs" />
+    <Compile Include="Modules\Configuracao\ConfiguracaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Configuracao\Views\ConfiguracaoView.Designer.cs">
+    <Compile Include="Modules\Configuracao\ConfiguracaoView.Designer.cs">
       <DependentUpon>ConfiguracaoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Funcao\Interactors\FuncaoInteractor.cs" />
-    <Compile Include="Modules\Funcao\Interfaces\FuncaoInterfaces.cs" />
-    <Compile Include="Modules\Funcao\Presenters\FuncaoPresenter.cs" />
-    <Compile Include="Modules\Funcao\Routers\FuncaoRouter.cs" />
-    <Compile Include="Modules\Funcao\Views\FuncaoView.cs">
+    <Compile Include="Modules\Funcao\FuncaoInteractor.cs" />
+    <Compile Include="Modules\Funcao\FuncaoInterfaces.cs" />
+    <Compile Include="Modules\Funcao\FuncaoPresenter.cs" />
+    <Compile Include="Modules\Funcao\FuncaoRouter.cs" />
+    <Compile Include="Modules\Funcao\FuncaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Funcao\Views\FuncaoView.designer.cs">
+    <Compile Include="Modules\Funcao\FuncaoView.designer.cs">
       <DependentUpon>FuncaoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\GeradorRelatorioManutencao\Interactors\GeradorRelatorioManutencaoInteractor.cs" />
-    <Compile Include="Modules\GeradorRelatorioManutencao\Interfaces\GeradorRelatorioManutencaoInterfaces.cs" />
-    <Compile Include="Modules\GeradorRelatorioManutencao\Presenters\GeradorRelatorioManutencaoPresenter.cs" />
-    <Compile Include="Modules\GeradorRelatorioManutencao\Routers\GeradorRelatorioManutencaoRouter.cs" />
-    <Compile Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.cs">
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoInteractor.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoInterfaces.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoPresenter.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoRouter.cs" />
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.designer.cs">
+    <Compile Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoView.designer.cs">
       <DependentUpon>GeradorRelatorioManutencaoView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\GeradorRelatorio\Interactors\GeradorRelatorioInteractor.cs" />
-    <Compile Include="Modules\GeradorRelatorio\Interfaces\GeradorRelatorioInterfaces.cs" />
-    <Compile Include="Modules\GeradorRelatorio\Presenters\GeradorRelatorioPresenter.cs" />
-    <Compile Include="Modules\GeradorRelatorio\Routers\GeradorRelatorioRouter.cs" />
-    <Compile Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.cs">
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioInteractor.cs" />
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioInterfaces.cs" />
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioPresenter.cs" />
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioRouter.cs" />
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.Designer.cs">
+    <Compile Include="Modules\GeradorRelatorio\GeradorRelatorioView.Designer.cs">
       <DependentUpon>GeradorRelatorioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\ImportaRelatorio\Interactors\ImportaRelatorioInteractor.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Interfaces\ImportaRelatorioInterfaces.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Presenters\ImportaRelatorioPresenter.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Routers\ImportaRelatorioRouter.cs" />
-    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.cs">
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioInteractor.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioInterfaces.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioPresenter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioRouter.cs" />
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.designer.cs">
+    <Compile Include="Modules\ImportaRelatorio\ImportaRelatorioView.designer.cs">
       <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Modulo\Interactors\ModuloInteractor.cs" />
-    <Compile Include="Modules\Modulo\Interfaces\ModuloInterfaces.cs" />
-    <Compile Include="Modules\Modulo\Presenters\ModuloPresenter.cs" />
-    <Compile Include="Modules\Modulo\Routers\ModuloRouter.cs" />
-    <Compile Include="Modules\Modulo\Views\ModuloView.cs">
+    <Compile Include="Modules\Modulo\ModuloInteractor.cs" />
+    <Compile Include="Modules\Modulo\ModuloInterfaces.cs" />
+    <Compile Include="Modules\Modulo\ModuloPresenter.cs" />
+    <Compile Include="Modules\Modulo\ModuloRouter.cs" />
+    <Compile Include="Modules\Modulo\ModuloView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Modulo\Views\ModuloView.designer.cs">
+    <Compile Include="Modules\Modulo\ModuloView.designer.cs">
       <DependentUpon>ModuloView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Parametro\Interactors\ParametroInteractor.cs" />
-    <Compile Include="Modules\Parametro\Interfaces\ParametroInterfaces.cs" />
-    <Compile Include="Modules\Parametro\Presenters\ParametroPresenter.cs" />
-    <Compile Include="Modules\Parametro\Routers\ParametroRouter.cs" />
-    <Compile Include="Modules\Parametro\Views\ParametroView.cs">
+    <Compile Include="Modules\Parametro\ParametroInteractor.cs" />
+    <Compile Include="Modules\Parametro\ParametroInterfaces.cs" />
+    <Compile Include="Modules\Parametro\ParametroPresenter.cs" />
+    <Compile Include="Modules\Parametro\ParametroRouter.cs" />
+    <Compile Include="Modules\Parametro\ParametroView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Parametro\Views\ParametroView.designer.cs">
+    <Compile Include="Modules\Parametro\ParametroView.designer.cs">
       <DependentUpon>ParametroView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modules\Sistema\Interactors\SistemaInteractor.cs" />
-    <Compile Include="Modules\Sistema\Interfaces\SistemaInterfaces.cs" />
-    <Compile Include="Modules\Sistema\Presenters\SistemaPresenter.cs" />
-    <Compile Include="Modules\Sistema\Routers\SistemaRouter.cs" />
-    <Compile Include="Modules\Sistema\Views\SistemaView.cs">
+    <Compile Include="Modules\Sistema\SistemaInteractor.cs" />
+    <Compile Include="Modules\Sistema\SistemaInterfaces.cs" />
+    <Compile Include="Modules\Sistema\SistemaPresenter.cs" />
+    <Compile Include="Modules\Sistema\SistemaRouter.cs" />
+    <Compile Include="Modules\Sistema\SistemaView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Sistema\Views\SistemaView.Designer.cs">
+    <Compile Include="Modules\Sistema\SistemaView.Designer.cs">
       <DependentUpon>SistemaView.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,28 +159,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SettingsDefault.cs" />
-    <EmbeddedResource Include="Modules\Configuracao\Views\ConfiguracaoView.resx">
+    <EmbeddedResource Include="Modules\Configuracao\ConfiguracaoView.resx">
       <DependentUpon>ConfiguracaoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Funcao\Views\FuncaoView.resx">
+    <EmbeddedResource Include="Modules\Funcao\FuncaoView.resx">
       <DependentUpon>FuncaoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\GeradorRelatorioManutencao\Views\GeradorRelatorioManutencaoView.resx">
+    <EmbeddedResource Include="Modules\GeradorRelatorioManutencao\GeradorRelatorioManutencaoView.resx">
       <DependentUpon>GeradorRelatorioManutencaoView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\GeradorRelatorio\Views\GeradorRelatorioView.resx">
+    <EmbeddedResource Include="Modules\GeradorRelatorio\GeradorRelatorioView.resx">
       <DependentUpon>GeradorRelatorioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ImportaRelatorio\Views\ImportaRelatorioView.resx">
+    <EmbeddedResource Include="Modules\ImportaRelatorio\ImportaRelatorioView.resx">
       <DependentUpon>ImportaRelatorioView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Modulo\Views\ModuloView.resx">
+    <EmbeddedResource Include="Modules\Modulo\ModuloView.resx">
       <DependentUpon>ModuloView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Parametro\Views\ParametroView.resx">
+    <EmbeddedResource Include="Modules\Parametro\ParametroView.resx">
       <DependentUpon>ParametroView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modules\Sistema\Views\SistemaView.resx">
+    <EmbeddedResource Include="Modules\Sistema\SistemaView.resx">
       <DependentUpon>SistemaView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -192,6 +192,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+	<ProjectReference Include="..\Chronus.Comum\Chronus.Comum.csproj">
+      <Project>{70ED11FC-8CA1-4384-A226-9B3C9C7B8038}</Project>
+      <Name>Chronus.Comum</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VIPER.DTO\VIPER.DTO.csproj">
       <Project>{ae6a2589-6ea5-4511-97fe-c9cd2aab3ae9}</Project>
       <Name>VIPER.DTO</Name>

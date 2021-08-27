@@ -10,7 +10,7 @@ namespace VIPER.Infrastructure.Mapping
         {
             ToTable("UsuarioFuncao");
             HasKey(c => c.Id);
-			Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            Property(c => c.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(c => c.UsuarioId).IsRequired();
             Property(c => c.FuncaoId).IsRequired();
             Property(c => c.PermiteIncluir).IsRequired();
