@@ -8,17 +8,17 @@ namespace NAMESPACE.Modules.__MODULENAME__.Routers
 {
     public class VIPERRouter : IPresenterToRouterVIPER
     {
-        public static Form New()
+        public static Form New(int funcao)
         {
-            return new VIPERRouter().LoadModule();
+            return new VIPERRouter().LoadModule(funcao);
         }
 
-        private Form LoadModule()
+        private Form LoadModule(int funcao)
         {
-            VIPERPresenter presenter = new VIPERPresenter();
-            VIPERInteractor interactor = new VIPERInteractor();
-            VIPERRouter router = new VIPERRouter();
-            VIPERView form = new VIPERView();
+            var presenter = new VIPERPresenter();
+            var interactor = new VIPERInteractor();
+            var router = new VIPERRouter();
+            var form = new VIPERView(funcao);
             
             form.presenter = presenter;
 

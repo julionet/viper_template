@@ -11,7 +11,7 @@ namespace NAMESPACE.Modules.__MODULENAME__.Views
     {
         public IViewToPresenterVIPER presenter;
 
-        public VIPERView()
+        public VIPERView(int funcao)
         {
             InitializeComponent();
         }
