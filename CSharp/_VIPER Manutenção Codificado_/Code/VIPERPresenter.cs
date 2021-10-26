@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NAMESPACE.Modules.__MODULENAME__.Interfaces;
+using NAMESPACE.DTO;
 
 namespace NAMESPACE.Modules.__MODULENAME__.Presenters
 {
@@ -52,6 +53,16 @@ namespace NAMESPACE.Modules.__MODULENAME__.Presenters
         public void ObterDadosPrincipalSucesso(List<Entity.VIPER> dados)
         {
             view.ObterDadosPrincipalSucesso(dados);
+        }
+		
+		public void SelecionarAcessoPorUsuario(int usuario, int funcao, int modulo, int sistema)
+        {
+            interactor.SelecionarAcessoPorUsuario(usuario, funcao, modulo, sistema);
+        }
+
+        public void SelecionarAcessoPorUsuarioSucesso(UsuarioFuncaoDTO acesso)
+        {
+            view.SelecionarAcessoPorUsuarioSucesso(acesso);
         }
     }
 }

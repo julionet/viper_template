@@ -9,6 +9,7 @@
 package NAMESPACE.modules._VIPER_.dao;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -23,8 +24,8 @@ public class VIPERDAO implements DAOContracts<VIPER> {
 
 	private final SQLiteDatabase db;
 
-    public VIPERDAO(SQLiteDatabase db) {
-        this.db = db;
+    public VIPERDAO(Context context) {
+        this.db = DBHelper.getDatabaseInstance(context);
     }
 	
 	@Override

@@ -6,13 +6,15 @@
 //  Copyright © __YEAR__ __ORGANIZATIONNAME__. All rights reserved.
 //
 
-using VIPER.Controller.Helpers;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace VIPER.Controller
 {
@@ -34,9 +36,30 @@ namespace VIPER.Controller
                 opt.JsonSerializerOptions.PropertyNamingPolicy = null;
             });
 
-            services.AddAuthentication("BasicAuthentication")
-                .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
-            services.AddScoped<Helpers.IAuthenticationService, Helpers.AuthenticationService>();
+            //services.AddAuthentication("BasicAuthentication")
+            //    .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+            //services.AddScoped<Helpers.IAuthenticationService, Helpers.AuthenticationService>();
+
+            var configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+            var ChaveAutenticacao = configuration.GetSection("AppSettings").GetValue<string>("ChaveAutenticacao");
+
+            var key = Encoding.ASCII.GetBytes(ChaveAutenticacao);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

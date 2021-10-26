@@ -1,5 +1,6 @@
 ﻿using NAMESPACE.Modules.__MODULENAME__.Interfaces;
 using NAMESPACE.Service;
+using System.Linq;
 
 namespace NAMESPACE.Modules.__MODULENAME__.Interactors
 {
@@ -32,6 +33,13 @@ namespace NAMESPACE.Modules.__MODULENAME__.Interactors
                 presenter.ObterDadosPrincipalSucesso(dados);
             else
                 presenter.ObterDadosPrincipalFalha();
+        }
+		
+		public void SelecionarAcessoPorUsuario(int usuario, int funcao, int modulo, int sistema)
+        {
+            var acesso = Servicos.usuarioFuncaoService.SelecionarAcessoPorUsuarioModulo(usuario, modulo, sistema).Where(p => p.FuncaoId == funcao).FirstOrDefault();
+            if (acesso != null)
+                presenter.SelecionarAcessoPorUsuarioSucesso(acesso);
         }
     }
 }

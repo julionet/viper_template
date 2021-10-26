@@ -1,5 +1,7 @@
 ﻿using Chronus.DXperience;
 using NAMESPACE.Modules.__MODULENAME__.Interfaces;
+using NAMESPACE.DTO;
+using NAMESPACE.Service;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -12,10 +14,14 @@ namespace NAMESPACE.Modules.__MODULENAME__.Views
         public IViewToPresenterVIPER presenter;
 
         private SplashScreen _splash;
+		
+		private int _funcao;
 
-        public VIPERView()
+        public VIPERView(int funcao)
         {
             InitializeComponent();
+			
+			_funcao = funcao;
         }
 
         protected override void IncluirRegistro()
@@ -31,8 +37,12 @@ namespace NAMESPACE.Modules.__MODULENAME__.Views
 
         protected override void ObterDadosPrincipal()
         {
-            _splash = new SplashScreen("Buscando informações...");
-            presenter.ObterDadosPrincipal(sCondicao);
+			principalBindingSource.Clear();
+            if (!string.IsNullOrWhiteSpace(sCondicao))
+            {
+				_splash = new SplashScreen("Buscando informações...");
+				presenter.ObterDadosPrincipal(sCondicao);
+			}
         }
 
         protected override void GravarRegistro()
@@ -66,7 +76,7 @@ namespace NAMESPACE.Modules.__MODULENAME__.Views
         public void GravarSucesso()
         {
             _splash.FinalizarSplashScreen();
-            ExecutarAntesGravar();
+            ExecutarAposGravar();
         }
 
         public void GravarFalha(string mensagem)
@@ -86,5 +96,17 @@ namespace NAMESPACE.Modules.__MODULENAME__.Views
             _splash.FinalizarSplashScreen();
             XtraMessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
-    }
+		
+		public void SelecionarAcessoPorUsuarioSucesso(UsuarioFuncaoDTO acesso)
+        {
+            this.PermiteIncluir = acesso.PermiteIncluir || Global.Instance.UsuarioLogado.Master || Global.Instance.GerenciadorSistema;
+            this.PermiteAlterar = acesso.PermiteAlterar || Global.Instance.UsuarioLogado.Master || Global.Instance.GerenciadorSistema;
+            this.PermiteExcluir = acesso.PermiteExcluir || Global.Instance.UsuarioLogado.Master || Global.Instance.GerenciadorSistema;
+        }
+
+		private void VIPERView_Load(object sender, EventArgs e)
+        {
+            presenter.SelecionarAcessoPorUsuario(Global.Instance.UsuarioLogado.Id, _funcao, 0, Global.Instance.Sistema.Id);
+        }    
+	}
 }

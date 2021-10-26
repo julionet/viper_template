@@ -130,6 +130,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "VIPERView";
             this.Text = "VIPERView";
+			this.Load += new System.EventHandler(this.VIPERView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pclAcesso)).EndInit();
             this.pclAcesso.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pclAcessoBottom)).EndInit();

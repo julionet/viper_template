@@ -7,7 +7,6 @@
 //
 
 using NAMESPACE.Database;
-using NAMESPACE.DTO;
 using NAMESPACE.Entity;
 using NAMESPACE.Repository;
 using Microsoft.AspNetCore.Authorization;
@@ -74,7 +73,7 @@ namespace NAMESPACE.Controller.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Excluir(int id)
+        public IActionResult Delete(int id)
         {
             using (var context = new _NAMESPACE_Context())
             {
@@ -112,7 +111,7 @@ namespace NAMESPACE.Controller.Controllers
         }
 
         [HttpGet("filter")]
-        public IEnumerable<VIPER> Filtrar(string condicao)
+        public IEnumerable<VIPER> Filter(string condicao)
         {
             using var repository = new VIPERRepository();
             return repository.Filtrar(condicao);
